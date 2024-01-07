@@ -4,6 +4,15 @@
 
 ## ✅ What I Learned
 
+### Wrap text with Tags
+
+1. Select the text you want to wrap with a tag.
+2. Press:
+   Ctrl + Shift + P on Windows and Linux
+   Command + Shift + P on macOS
+
+3. Type wrap and select Emmet: Wrap with Abbreviation.
+
 ## 🛠️ Trouble Shooting
 
 ### Parsing error: Cannot find module 'next/babel'
