@@ -13,6 +13,14 @@
 
 3. Type wrap and select Emmet: Wrap with Abbreviation.
 
+### react-type-animation
+
+A customizable React typing animation component
+
+```
+npm install react-type-animation
+```
+
 ## 🛠️ Trouble Shooting
 
 ### Parsing error: Cannot find module 'next/babel'
@@ -61,3 +69,7 @@ Solution:
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
 
 ```
+
+### Error: useRef only works in Client Components.
+
+Solution : Add the "use client" directive at the top of the file to use it
