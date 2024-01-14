@@ -4,6 +4,45 @@
 
 ## ✅ What I Learned
 
+### Shortcut
+
+<details>
+<summary>rafc</summary>
+<div markdown="1">
+
+```
+import React from 'react'
+
+export const page = () => {
+return (
+<div>page</div>
+)
+}
+```
+
+</div>
+</details>
+<details>
+<summary>rafce</summary>
+<div markdown="1">
+
+react component utilizing an arrow function
+
+```
+import React from 'react'
+
+const page = () => {
+  return (
+    <div>page</div>
+  )
+}
+
+export default page
+```
+
+</div>
+</details>
+
 ### Wrap text with Tags
 
 1. Select the text you want to wrap with a tag.
@@ -20,6 +59,16 @@ A customizable React typing animation component
 ```
 npm install react-type-animation
 ```
+
+https://www.npmjs.com/package/react-type-animation
+
+### heroicons
+
+```
+npm install @heroicons/react
+```
+
+https://heroicons.com/
 
 ## 🛠️ Trouble Shooting
 

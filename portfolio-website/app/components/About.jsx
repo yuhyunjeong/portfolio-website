@@ -17,16 +17,19 @@ export default function About() {
                 1000,
                 "web developer",
                 1000,
-                "frontend developer",
-                1000,
               ]}
               wrapper="span"
               speed={50}
               repeat={Infinity}
             />
           </h1>
-          <p className="text-[#ADB7BE] text-lg lg:text-xl">
-            I'm a web developer
+          <p className="text-black text-lg lg:text-xl">
+            I have experience with full-stack development using Java,
+            Spring(boot), MySQL, Oracle on the backend and React,
+            JavaScript(JQuery), HTML5, CSS, Bootstrap on the frontend. Other
+            skills include experience with Docker, Linux and a little bit of
+            Matlab. I can be a good front-end developer who can consider both
+            users and back-end developers.
           </p>
         </div>
       </div>
