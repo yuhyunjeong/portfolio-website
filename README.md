@@ -6,6 +6,8 @@
 
 ### Shortcut
 
+https://github.com/r5n-dev/vscode-react-javascript-snippets/blob/HEAD/docs/Snippets.md
+
 <details>
 <summary>rafc</summary>
 <div markdown="1">
@@ -14,9 +16,9 @@
 import React from 'react'
 
 export const page = () => {
-return (
-<div>page</div>
-)
+  return (
+    <div>page</div>
+  )
 }
 ```
 
@@ -45,12 +47,11 @@ export default page
 
 ### Wrap text with Tags
 
-1. Select the text you want to wrap with a tag.
-2. Press:
-   Ctrl + Shift + P on Windows and Linux
-   Command + Shift + P on macOS
+1.  Select the text you want to wrap with a tag.
+2.  Ctrl + Shift + P on Windows and Linux<p>
+    Command + Shift + P on macOS
 
-3. Type wrap and select Emmet: Wrap with Abbreviation.
+3.  Type wrap and select Emmet: Wrap with Abbreviation.
 
 ### react-type-animation
 

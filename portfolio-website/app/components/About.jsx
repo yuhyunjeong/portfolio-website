@@ -23,6 +23,7 @@ export default function About() {
               repeat={Infinity}
             />
           </h1>
+          <br></br>
           <p className="text-black text-lg lg:text-xl">
             I have experience with full-stack development using Java,
             Spring(boot), MySQL, Oracle on the backend and React,
