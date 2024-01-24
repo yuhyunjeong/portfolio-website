@@ -24,14 +24,7 @@ export default function About() {
             />
           </h1>
           <br></br>
-          <p className="text-black text-lg lg:text-xl">
-            I have experience with full-stack development using Java,
-            Spring(boot), MySQL, Oracle on the backend and React,
-            JavaScript(JQuery), HTML5, CSS, Bootstrap on the frontend. Other
-            skills include experience with Docker, Linux and a little bit of
-            Matlab. I can be a good front-end developer who can consider both
-            users and back-end developers.
-          </p>
+          <p className="text-black text-lg lg:text-xl">front-end developer</p>
         </div>
       </div>
     </section>

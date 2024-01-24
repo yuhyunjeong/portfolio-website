@@ -4,7 +4,31 @@
 
 ## ✅ What I Learned
 
-### Shortcut
+### About NEXT.js 💡
+
+an open-source web development framework created by Vercel providing React-based web applications with server-side rendering and static website generation.
+
+https://nextjs.org/docs/getting-started/installation
+
+```
+// install
+npx create-next-app@latest
+
+// options
+What is your project named? portfolio-website
+Would you like to use TypeScript? No
+Would you like to use ESLint? Yes
+Would you like to use Tailwind CSS? Yes
+Would you like to use `src/` directory? Yes
+Would you like to use App Router? (recommended)Yes
+Would you like to customize the default import alias (@/*)? No
+What import alias would you like configured? @/*
+
+// run
+npm run dev
+```
+
+### Shortcut by Snippets
 
 https://github.com/r5n-dev/vscode-react-javascript-snippets/blob/HEAD/docs/Snippets.md
 
