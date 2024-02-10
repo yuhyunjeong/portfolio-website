@@ -28,6 +28,32 @@ What import alias would you like configured? @/*
 npm run dev
 ```
 
+### useTransition
+
+React Hook that lets you update the state without blocking the UI
+
+- useTransition does not take any parameters.
+- useTransition returns an array with exactly two items:
+  1. isPending flag that tells you whether there is a pending transition
+  2. startTransition function that lets you mark a state update as a transition
+
+```
+import { useTransition } from 'react';
+
+function TabContainer() {
+  const [isPending, startTransition] = useTransition();
+  const [tab, setTab] = useState('about');
+
+  function selectTab(nextTab) {
+    startTransition(() => {
+      setTab(nextTab);
+    });
+  }
+}
+```
+
+The startTransition function returned by useTransition lets you mark a state update as a transition
+
 ### Shortcut by Snippets
 
 https://github.com/r5n-dev/vscode-react-javascript-snippets/blob/HEAD/docs/Snippets.md
