@@ -2,6 +2,50 @@
 import React, { useTransition, useState } from "react";
 import TabButton from "./TabButton";
 
+const TAB_DATA = [
+  {
+    title: "Skills",
+    id: "skills",
+    content: (
+      <ul>
+        <li>React</li>
+        <li>Vanilla Javascript</li>
+        <li>CSS</li>
+        <li>HTML5</li>
+        <li>Java</li>
+        <li>Spring</li>
+        <li>SQL</li>
+        <li>Linux</li>
+      </ul>
+    ),
+  },
+  {
+    title: "Education",
+    id: "education",
+    content: (
+      <ul>
+        <li>
+          National Institute for Lifelong Education (NILE), Bachelor of
+          Engineering in Computer Engineering
+        </li>
+        <li>
+          Korea University of Technology and Education, Electrical, Electronics
+          and Communication Engineering
+        </li>
+      </ul>
+    ),
+  },
+  {
+    title: "Certification",
+    id: "certification",
+    content: (
+      <ul>
+        <li>Responsive Web Design</li>
+        <li>SQL Developer</li>
+      </ul>
+    ),
+  },
+];
 const AboutSection = () => {
   const [tab, setTab] = useState("skills");
   const [isPending, startTransition] = useTransition();
@@ -44,6 +88,7 @@ const AboutSection = () => {
             Certification
           </TabButton>
         </div>
+        <div className="mt-8">{TAB_DATA.find((t) => t.id === tab).content}</div>
       </div>
     </section>
   );
