@@ -7,15 +7,14 @@ const TAB_DATA = [
     title: "Skills",
     id: "skills",
     content: (
-      <ul>
+      <ul className="list-disc pl-2">
         <li>React</li>
+        <li>Next.js</li>
         <li>Vanilla Javascript</li>
         <li>CSS</li>
         <li>HTML5</li>
         <li>Java</li>
-        <li>Spring</li>
         <li>SQL</li>
-        <li>Linux</li>
       </ul>
     ),
   },
@@ -23,14 +22,14 @@ const TAB_DATA = [
     title: "Education",
     id: "education",
     content: (
-      <ul>
+      <ul className="list-disc pl-2">
         <li>
-          National Institute for Lifelong Education (NILE), Bachelor of
-          Engineering in Computer Engineering
+          National Institute for Lifelong Education (NILE)
+          <br></br>Bachelor of Engineering in Computer Engineering
         </li>
         <li>
-          Korea University of Technology and Education, Electrical, Electronics
-          and Communication Engineering
+          Korea University of Technology and Education
+          <br></br>Electrical, Electronics and Communication Engineering
         </li>
       </ul>
     ),
@@ -39,9 +38,10 @@ const TAB_DATA = [
     title: "Certification",
     id: "certification",
     content: (
-      <ul>
+      <ul className="list-disc pl-2">
         <li>Responsive Web Design</li>
         <li>SQL Developer</li>
+        <li>Computer specialist in Spreadsheet and database Level 1</li>
       </ul>
     ),
   },
@@ -57,8 +57,8 @@ const AboutSection = () => {
   };
 
   return (
-    <section className="text-white">
-      <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
+    <section className="text-black" id="about">
+      <div className="md:grid md:grid-cols gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
         <div className="mt-4 md:t-0 text-left flex flex-col h-full">
           <h1 className="text-4xl font-bold mb-4">About me</h1>
           <p className="text-base lg:text-lg">
@@ -93,7 +93,7 @@ const AboutSection = () => {
               Certification
             </TabButton>
           </div>
-          <div className="mt-8">
+          <div className="mt-8 text-white">
             {TAB_DATA.find((t) => t.id === tab).content}
           </div>
         </div>
