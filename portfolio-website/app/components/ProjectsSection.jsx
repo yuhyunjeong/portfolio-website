@@ -8,6 +8,8 @@ const PROJECT_DATA = [
     description: "weather application",
     image: "/images/projects/weatherapp_1.gif",
     tag: ["All", "Web"],
+    gitUrl: "https://github.com/yuhyunjeong/weather-app",
+    previewUrl: "https://yuhyunjeong.github.io/weather-app/",
   },
   {
     id: 2,
@@ -15,6 +17,8 @@ const PROJECT_DATA = [
     description: "Todo list application",
     image: "/images/projects/todolist_3.gif",
     tag: ["All", "Web"],
+    gitUrl: "https://github.com/yuhyunjeong/ToDo-list",
+    previewUrl: "https://yuhyunjeong.github.io/ToDo-list/",
   },
   {
     id: 3,
@@ -22,6 +26,8 @@ const PROJECT_DATA = [
     description: "mini space shooting game",
     image: "/images/projects/shooting_game.gif",
     tag: ["All", "Web"],
+    gitUrl: "https://github.com/yuhyunjeong/shooting-game",
+    previewUrl: "https://stunning-fudge-a130bb.netlify.app",
   },
   {
     id: 4,
@@ -29,6 +35,8 @@ const PROJECT_DATA = [
     description: "calendar",
     image: "/images/projects/calendar_2.gif",
     tag: ["All", "Web"],
+    gitUrl: "https://github.com/yuhyunjeong/calendar",
+    previewUrl: "https://yuhyunjeong.github.io/calendar/",
   },
 ];
 
@@ -45,6 +53,8 @@ const ProjectsSection = ({ imgUrl, title, description }) => {
             title={project.title}
             description={project.description}
             imgUrl={project.image}
+            gitUrl={project.gitUrl}
+            previewUrl={project.previewUrl}
           />
         ))}
       </div>
