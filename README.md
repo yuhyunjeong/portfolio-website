@@ -28,6 +28,14 @@ What import alias would you like configured? @/*
 npm run dev
 ```
 
+### send email using Next.js
+
+https://resend.com/docs/send-with-nextjs
+
+```
+npm install resend
+```
+
 ### useTransition
 
 React Hook that lets you update the state without blocking the UI
