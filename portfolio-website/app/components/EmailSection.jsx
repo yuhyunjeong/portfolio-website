@@ -1,4 +1,6 @@
 import React from "react";
+import Link from "next/link";
+import Image from "next/image";
 
 const EmailSection = () => {
   return (
@@ -9,7 +11,22 @@ const EmailSection = () => {
       <div>
         <h5 className="text-white text-xl font-bold my-2">Let's Connect!</h5>
         <p></p>
-        <div className="socials flex flex-row gap-2"></div>
+        <div className="socials flex flex-row gap-2">
+          <Link href="https://github.com/yuhyunjeong/">
+            <div className="relative w-14 h-14">
+              <Image src="/github-icon.png" alt="Github Icon" layout="fill" />
+            </div>
+          </Link>
+          <Link href="https://www.linkedin.com/in/yuhyun-jade-jung-1b14a2290/">
+            <div className="relative w-14 h-14">
+              <Image
+                src="/linkedin-icon.png"
+                alt="Linkedin Icon"
+                layout="fill"
+              />
+            </div>
+          </Link>
+        </div>
       </div>
       <div>
         <form className="flex flex-col gap-4">

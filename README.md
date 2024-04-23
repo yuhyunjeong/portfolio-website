@@ -181,3 +181,19 @@ Solution:
 ### Error: useRef only works in Client Components.
 
 Solution : Add the "use client" directive at the top of the file to use it
+
+### Unhandled Runtime Error: Image with src "/github-icon.png" is missing required "width" property.
+
+Solution:
+
+Add width and height properties to the Image component. If you don't know the actual size of the image, you can use the layout="fill" attribute to set the image to fill the size of the parent element.
+
+When referencing files in the public directory in Next.js, make sure to use absolute paths that start with a / (forward slash).
+
+```
+<Link href="https://github.com/yuhyunjeong/">
+  <div className="relative w-14 h-14">
+    <Image src="/github-icon.png" alt="Github Icon" layout="fill" />
+  </div>
+</Link>
+```
