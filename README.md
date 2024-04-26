@@ -36,6 +36,22 @@ https://resend.com/docs/send-with-nextjs
 npm install resend
 ```
 
+https://github.com/resend/resend-nextjs-app-router-example
+
+```
+in .env.local
+
+RESEND_API_KEY=""
+```
+
+request: POST http://localhost:3000/api/send
+
+```
+in Terminal
+
+curl -X POST http://localhost:3000/api/send
+```
+
 ### useTransition
 
 React Hook that lets you update the state without blocking the UI
@@ -196,4 +212,44 @@ When referencing files in the public directory in Next.js, make sure to use abso
     <Image src="/github-icon.png" alt="Github Icon" layout="fill" />
   </div>
 </Link>
+```
+
+###
+
+```
+{
+    "data": null,
+    "error": {
+        "statusCode": 403,
+        "message": "The gmail.com domain is not verified. Please, add and verify your domain on https://resend.com/domains",
+        "name": "validation_error"
+    }
+}
+```
+
+Solution:
+
+```
+import { Resend } from "resend";
+
+const resend = new Resend(process.env.RESEND_API_KEY);
+
+export async function POST() {
+  try {
+    const data = await resend.emails.send({
+      from: "Acme <onboarding@resend.dev>", // test email address. no gmail
+      to: ["yuhyunjungdev@gmail.com"],
+      subject: "Hello world",
+      react: (
+        <>
+          <p>Email Body</p>
+        </>
+      ),
+    });
+
+    return Response.json(data);
+  } catch (error) {
+    return Response.json({ error });
+  }
+}
 ```
