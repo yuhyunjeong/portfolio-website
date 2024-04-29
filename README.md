@@ -52,6 +52,26 @@ in Terminal
 curl -X POST http://localhost:3000/api/send
 ```
 
+### e.preventDefault()
+
+- prevent the form from actually being submitted and the page from refreshing.
+- useful for collecting data entered by the user and using JavaScript to process that data.
+- when using a form to send an email or perform a search, you can process the results without the page refreshing.
+
+```
+const EmailSection = () => {
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    const data = {
+      email: e.target.email.value,
+      subject: e.target.subject.value,
+      message: e.target.message.value,
+    };
+    const JSONdata = JSON.stringify(data);
+    const endpoint = "/api/send";
+...
+```
+
 ### useTransition
 
 React Hook that lets you update the state without blocking the UI
