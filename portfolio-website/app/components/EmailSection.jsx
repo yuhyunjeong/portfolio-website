@@ -1,9 +1,10 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 
 const EmailSection = () => {
+  const [emailSubmitted, setEmailSubmitted] = useState(false);
   const handleSubmit = async (e) => {
     e.preventDefault();
     const data = {
@@ -32,6 +33,7 @@ const EmailSection = () => {
 
     if (response.status === 200) {
       console.log("Message sent.");
+      setEmailSubmitted(true);
     }
   };
 
@@ -116,6 +118,9 @@ const EmailSection = () => {
           >
             Send Message
           </button>
+          {emailSubmitted && (
+            <p className="text-yellow-200 mt-2">Email sent successfully!</p>
+          )}
         </form>
       </div>
     </section>

@@ -72,6 +72,18 @@ const EmailSection = () => {
 ...
 ```
 
+### useState(false)
+
+- when the component renders for the first time, this state will be initialized to false.
+- can update it to true or any other value as needed.
+- it could be used to control the visibility of UI elements like modals or dropdown menus
+
+```
+const [emailSubmitted, setEmailSubmitted] = useState(false);
+...
+setEmailSubmitted(true);
+```
+
 ### useTransition
 
 React Hook that lets you update the state without blocking the UI
