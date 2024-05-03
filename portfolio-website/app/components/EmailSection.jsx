@@ -76,8 +76,8 @@ const EmailSection = () => {
               type="email"
               id="email"
               required
-              className="bg-[#eeecefd9] border border-[#e8cbee97] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
-              placeholder="yuhyunjungdev@gmail.com"
+              className="bg-[#eeecefd9] border border-[#e8cbee97] placeholder-[#9CA2A9] text-gray-500 text-sm rounded-lg block w-full p-2.5"
+              placeholder="... @gmail.com"
             />
           </div>
           <div className="mb-6">
@@ -92,7 +92,7 @@ const EmailSection = () => {
               type="text"
               id="subject"
               required
-              className="bg-[#eeecefd9] border border-[#e8cbee97] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
+              className="bg-[#eeecefd9] border border-[#e8cbee97] placeholder-[#9CA2A9] text-gray-500 text-sm rounded-lg block w-full p-2.5"
               placeholder="Just say hi!"
             />
           </div>
@@ -108,7 +108,7 @@ const EmailSection = () => {
               type="text"
               id="message"
               required
-              className="bg-[#eeecefd9] border border-[#e8cbee97] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
+              className="bg-[#eeecefd9] border border-[#e8cbee97] placeholder-[#9CA2A9] text-gray-500 text-sm rounded-lg block w-full p-2.5"
               placeholder="Let's talk about ..."
             />
           </div>
