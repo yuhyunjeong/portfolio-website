@@ -169,6 +169,22 @@ npm install react-type-animation
 
 https://www.npmjs.com/package/react-type-animation
 
+### framer-motion
+
+Framer Motion is a simple yet powerful motion library for React
+
+It powers the amazing animations and interactions in Framer, the web builder for creative pros. Zero code, maximum speed
+
+```
+// install
+npm install framer-motion
+
+// importing
+"use client";
+
+import { motion } from "framer-motion"
+```
+
 ### heroicons
 
 ```
