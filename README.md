@@ -198,6 +198,27 @@ import { motion } from "framer-motion"
 
 https://www.framer.com/motion/introduction/
 
+### useInView
+
+A simple state hook for when an element is within the viewport
+
+- useInView is a tiny (0.6kb) hook that detects when the provided element is within the viewport
+- useInView can track the visibility of any HTML element. Pass a ref object to both useInView and the HTML element
+- While the element is outside the viewport, useInView will return false. When it moves inside the view, it'll re-render the component and return true
+
+```
+import { useInView } from "framer-motion"
+
+function Component() {
+  const ref = useRef(null)
+  const isInView = useInView(ref)
+
+  return <div ref={ref} />
+}
+```
+
+https://www.framer.com/motion/use-in-view/
+
 ### heroicons
 
 ```
