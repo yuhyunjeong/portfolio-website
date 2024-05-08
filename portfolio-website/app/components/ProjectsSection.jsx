@@ -44,7 +44,16 @@ const PROJECT_DATA = [
 
 const ProjectsSection = ({ imgUrl, title, description }) => {
   const ref = useRef(null);
+  {
+    /** It creates a reference for the section using useRef. */
+  }
   const isInView = useInView(ref, { once: true });
+  {
+    /** It detects whether the section is in view using the useInView hook, ensuring it only triggers once. */
+  }
+  {
+    /** Defines initial and animation states for the project cards using the cardVariants object. */
+  }
   const cardVariants = {
     initial: { y: 50, opacity: 0 },
     animate: { y: 0, opacity: 1 },
@@ -55,6 +64,7 @@ const ProjectsSection = ({ imgUrl, title, description }) => {
       <h2 className="text-center text-4xl font-bold text-white m-8">
         My Projects
       </h2>
+
       <ul ref={ref} className="grid md:grid-cols-3 gap-8 md:gap-12">
         {PROJECT_DATA.map((project, index) => (
           <motion.li
