@@ -52,7 +52,10 @@ const ProjectsSection = ({ imgUrl, title, description }) => {
     /** It detects whether the section is in view using the useInView hook, ensuring it only triggers once. */
   }
   {
-    /** Defines initial and animation states for the project cards using the cardVariants object. */
+    /** Defines initial and animation states for the project cards using the cardVariants object.
+     * The initial state is a translation of 50 along the y-axis and a transparency of 0.
+     * The animated state means no y-axis translation and no transparency.
+     */
   }
   const cardVariants = {
     initial: { y: 50, opacity: 0 },
@@ -73,6 +76,9 @@ const ProjectsSection = ({ imgUrl, title, description }) => {
             animate={isInView ? "animate" : "initial"}
             transition={{ duration: 0.3, delay: index * 0.4 }}
           >
+            {/** Initially, the initial state is applied, and the animation is activated when the corresponding section is visible on the screen.
+             *
+             * transition property defines the duration and delay of the animation. a duration of 0.3 seconds is used and the delay is adjusted according to the index so that each project card appears sequentially.*/}
             <ProjectCard
               key={project.id}
               title={project.title}
