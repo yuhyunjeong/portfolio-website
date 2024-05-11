@@ -62,16 +62,23 @@ const AboutSection = () => {
         <div className="mt-4 md:t-0 text-left flex flex-col h-full">
           <h1 className="text-4xl font-bold mb-4">About me</h1>
           <p className="text-base lg:text-lg">
-            Hi! 👋 I'm a junior web developer with a focus on Vanilla
-            JavaScript, CSS, and I'm diving into React.js. I'm moving to
-            Toronto, Canada 🇨🇦 with a 2-year work permit soon. <br></br>I have
-            experience with full-stack development using JavaScript, HTML5, CSS,
-            and Bootstrap on the frontend, and Java, Spring(boot), MySQL, and
-            Oracle on the backend. My experience extends to Docker, Linux, and a
-            bit of Matlab. <br></br>
-            Currently passionate about elevating my skills as a Front-end
-            developer, I aim to blend functionality with eye-catching UX design.
-            👩🏻‍💻
+            Hello!👋 I'm a junior web developer with a focus on Vanilla
+            JavaScript, CSS, and diving into React. I've recently embarked on a
+            journey from South Korea🇰🇷 to Canada🇨🇦 with a 2-year work permit.
+            <br></br>
+            <br></br>I bring experience in full-stack development using
+            JavaScript, HTML5, CSS, and Bootstrap on the frontend, and Java,
+            Spring(boot) and SQL on the backend. My toolkit also includes Git,
+            Linux and Docker.
+            <br></br>
+            <br></br>
+            Passionate about elevating my skills as a Front-end developer, I've
+            been actively working on various mini projects to enhance my
+            frontend development skills. Through these projects, I've practiced
+            API calls, implemented responsive web design principles, and
+            utilized Figma for UI/UX design. My goal is to continue blending
+            functionality with eye-catching UX design as I further develop my
+            frontend expertise. 👩🏻‍💻
           </p>
           <div className="flex flex-row mt-8">
             <TabButton

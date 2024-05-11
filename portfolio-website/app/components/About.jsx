@@ -17,6 +17,8 @@ export default function About() {
                 1000,
                 "web developer",
                 1000,
+                "frontend developer",
+                1000,
               ]}
               wrapper="span"
               speed={50}
@@ -24,7 +26,7 @@ export default function About() {
             />
           </h1>
           <br></br>
-          <p className="text-black text-lg lg:text-xl">front-end developer</p>
+          <p className="text-black text-lg lg:text-xl">Yuhyun Jade Jung</p>
         </div>
       </div>
     </section>
