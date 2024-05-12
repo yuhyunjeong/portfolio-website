@@ -40,6 +40,15 @@ const PROJECT_DATA = [
     gitUrl: "https://github.com/yuhyunjeong/calendar",
     previewUrl: "https://yuhyunjeong.github.io/calendar/",
   },
+  {
+    id: 5,
+    title: "Netflix clone",
+    description: "clone Netflix webpage",
+    image: "/images/projects/netflix-clone.gif",
+    tag: ["All", "Web"],
+    gitUrl: "https://github.com/yuhyunjeong/netflix-clone",
+    previewUrl: "",
+  },
 ];
 
 const ProjectsSection = ({ imgUrl, title, description }) => {
