@@ -38,14 +38,13 @@ const EmailSection = () => {
   };
 
   return (
-    <section
-      id="contact"
-      className="grid md:grid-cols-2 my-12 md:my-12 py-24 gap-4"
-    >
-      <div>
-        <h5 className="text-white text-xl font-bold my-2">Let's Connect!</h5>
+    <section id="contact" className="grid my-12 md:my-12 py-24 gap-4">
+      <div className="flex flex-col">
+        <h5 className="flex justify-center items-center text-white text-2xl font-bold my-4">
+          Let's Connect!
+        </h5>
         <p></p>
-        <div className="socials flex flex-row gap-2">
+        <div className="socials flex justify-center gap-2 mb-4">
           <Link href="https://github.com/yuhyunjeong/">
             <div className="relative w-14 h-14">
               <Image src="/github-icon.png" alt="Github Icon" layout="fill" />
@@ -61,10 +60,12 @@ const EmailSection = () => {
             </div>
           </Link>
         </div>
-      </div>
-      <div>
-        <form className="flex flex-col gap-6" onSubmit={handleSubmit}>
-          <div className="mb-6">
+
+        <form
+          className="flex flex-col gap-6 justify-center items-center"
+          onSubmit={handleSubmit}
+        >
+          <div className="mb-6 w-1/2">
             <label
               htmlFor="email"
               className="text-white block mb-2 text-sm font-medium"
@@ -80,7 +81,7 @@ const EmailSection = () => {
               placeholder="... @gmail.com"
             />
           </div>
-          <div className="mb-6">
+          <div className="mb-6 w-1/2">
             <label
               htmlFor="subject"
               className="text-white block mb-2 text-sm font-medium"
@@ -96,7 +97,7 @@ const EmailSection = () => {
               placeholder="Just say hi!"
             />
           </div>
-          <div className="mb-6">
+          <div className="mb-6 w-1/2">
             <label
               htmlFor="message"
               className="text-white block mb-2 text-sm font-medium"
@@ -114,7 +115,7 @@ const EmailSection = () => {
           </div>
           <button
             type="submit"
-            className="bg-gray-400 border border-[#decde1] hover:bg-primary-600 text-white font-medium py-2.5 px-5 rounded-lg w-full"
+            className="bg-gray-400 border border-[#decde1] hover:bg-primary-600 text-white font-medium py-2.5 px-5 rounded-lg w-1/2"
           >
             Send Message
           </button>
