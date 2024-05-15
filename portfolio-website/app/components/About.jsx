@@ -26,7 +26,11 @@ export default function About() {
             />
           </h1>
           <br></br>
-          <p className="text-black text-lg lg:text-xl">Yuhyun Jade Jung</p>
+          <p className="text-black text-lg lg:text-xl">
+            on a journey from 🇰🇷 to 🇨🇦
+            <br></br>love drawing nature on canvas 🎨
+            <br></br>runner 👟
+          </p>
         </div>
       </div>
     </section>

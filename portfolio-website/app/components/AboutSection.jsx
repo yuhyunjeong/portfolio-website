@@ -63,8 +63,7 @@ const AboutSection = () => {
           <h1 className="text-4xl font-bold mb-4">About me</h1>
           <p className="text-base lg:text-lg">
             Hello!👋 I'm a junior web developer with a focus on Vanilla
-            JavaScript, CSS, and diving into React. I've recently embarked on a
-            journey from South Korea🇰🇷 to Canada🇨🇦 with a 2-year work permit.
+            JavaScript, CSS, and diving into React.
             <br></br>
             <br></br>I bring experience in full-stack development using
             JavaScript, HTML5, CSS, and Bootstrap on the frontend, and Java,
@@ -80,7 +79,7 @@ const AboutSection = () => {
             functionality with eye-catching UX design as I further develop my
             frontend expertise. 👩🏻‍💻
           </p>
-          <div className="flex flex-row mt-8">
+          <div className="flex flex-row mt-8 text-lg">
             <TabButton
               selectTab={() => handleTabChange("skills")}
               active={tab === "skills"}
