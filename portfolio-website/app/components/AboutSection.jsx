@@ -7,14 +7,28 @@ const TAB_DATA = [
     title: "Skills",
     id: "skills",
     content: (
-      <ul className="list-disc pl-2">
-        <li>React</li>
-        <li>Next.js</li>
-        <li>Vanilla Javascript</li>
-        <li>CSS</li>
-        <li>HTML5</li>
-        <li>Java</li>
-        <li>SQL</li>
+      <ul className="list-disc pl-2 text-lg">
+        <li>
+          Language
+          <div className="text-sm">
+            <div>Javascript CSS HTML5 SQL Java Python</div>
+          </div>
+        </li>
+        <li>
+          Framework / Library
+          <div className="text-sm">
+            <div>React Next.js JQuery Bootstrap Spring(Boot) JUnit</div>
+          </div>
+        </li>
+        <li>
+          Developer Tool
+          <div className="text-sm">
+            <div>
+              Git JSON Docker Linux MacOS Windows VS Code Eclipse Intelli J
+              Figma
+            </div>
+          </div>
+        </li>
       </ul>
     ),
   },
@@ -22,14 +36,18 @@ const TAB_DATA = [
     title: "Education",
     id: "education",
     content: (
-      <ul className="list-disc pl-2">
+      <ul className="list-disc pl-2 text-lg">
         <li>
-          National Institute for Lifelong Education (NILE)
-          <br></br>Bachelor of Engineering in Computer Engineering
+          <div>Bachelor of Engineering in Computer Engineering</div>
+          <div className="text-slate-200">
+            National Institute for Lifelong Education (NILE)
+          </div>
         </li>
         <li>
-          Korea University of Technology and Education
-          <br></br>Electrical, Electronics and Communication Engineering
+          <div>Electrical, Electronics and Communication Engineering</div>
+          <div className="text-slate-200">
+            Korea University of Technology and Education
+          </div>
         </li>
       </ul>
     ),
@@ -38,7 +56,7 @@ const TAB_DATA = [
     title: "Certification",
     id: "certification",
     content: (
-      <ul className="list-disc pl-2">
+      <ul className="list-disc pl-2 text-lg">
         <li>Responsive Web Design</li>
         <li>SQL Developer</li>
         <li>Computer specialist in Spreadsheet and database Level 1</li>
