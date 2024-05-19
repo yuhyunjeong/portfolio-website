@@ -1,6 +1,7 @@
 "use client";
 import React, { useTransition, useState } from "react";
 import TabButton from "./TabButton";
+import Image from "next/image";
 
 const TAB_DATA = [
   {
@@ -9,20 +10,118 @@ const TAB_DATA = [
     content: (
       <ul className="list-disc pl-2 text-lg">
         <li>
-          Language
-          <div className="text-sm">
+          <div className="text-lg">
+            <div className="socials flex gap-4">
+              <div className="relative w-14 h-14">
+                <Image
+                  src="/images/skills/react_2.png"
+                  alt="react icon"
+                  layout="fill"
+                />
+              </div>
+              <div className="relative w-14 h-14">
+                <Image
+                  src="/images/skills/javascript.png"
+                  alt="javascript icon"
+                  layout="fill"
+                />
+              </div>
+              <div className="relative w-14 h-14">
+                <Image
+                  src="/images/skills/css.png"
+                  alt="css icon"
+                  layout="fill"
+                />
+              </div>
+              <div className="relative w-14 h-14">
+                <Image
+                  src="/images/skills/html.png"
+                  alt="html icon"
+                  layout="fill"
+                />
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div className="text-lg">
             <div>Javascript CSS HTML5 SQL Java Python</div>
           </div>
         </li>
         <li>
-          Framework / Library
-          <div className="text-sm">
+          <div className="text-lg">
+            <div className="socials flex gap-4">
+              <div className="relative w-14 h-14">
+                <Image
+                  src="/images/skills/jquery.png"
+                  alt="jquery icon"
+                  layout="fill"
+                />
+              </div>
+              <div className="relative w-14 h-14">
+                <Image
+                  src="/images/skills/java.png"
+                  alt="java icon"
+                  layout="fill"
+                />
+              </div>
+              <div className="relative w-14 h-14">
+                <Image
+                  src="/images/skills/bootstrap.png"
+                  alt="bootstrap icon"
+                  layout="fill"
+                />
+              </div>
+            </div>
             <div>React Next.js JQuery Bootstrap Spring(Boot) JUnit</div>
           </div>
         </li>
         <li>
-          Developer Tool
-          <div className="text-sm">
+          <div className="text-lg">
+            <div className="socials flex gap-4">
+              <div className="relative w-14 h-14">
+                <Image
+                  src="/images/skills/git.png"
+                  alt="git icon"
+                  layout="fill"
+                />
+              </div>
+              <div className="relative w-14 h-14">
+                <Image
+                  src="/images/skills/docker.png"
+                  alt="docker icon"
+                  layout="fill"
+                />
+              </div>
+              <div className="relative w-14 h-14">
+                <Image
+                  src="/images/skills/linux.png"
+                  alt="linux icon"
+                  layout="fill"
+                />
+              </div>
+              <div className="relative w-14 h-14">
+                <Image
+                  src="/images/skills/mac.png"
+                  alt="mac icon"
+                  layout="fill"
+                />
+              </div>
+              <div className="relative w-14 h-14">
+                <Image
+                  src="/images/skills/windows.png"
+                  alt="windows icon"
+                  layout="fill"
+                />
+              </div>
+              <div className="relative w-14 h-14">
+                <Image
+                  src="/images/skills/figma.png"
+                  alt="figma icon"
+                  layout="fill"
+                />
+              </div>
+            </div>
             <div>
               Git JSON Docker Linux MacOS Windows VS Code Eclipse Intelli J
               Figma
