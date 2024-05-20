@@ -1,8 +1,16 @@
 import React from "react";
 import Link from "next/link";
 import { CodeBracketIcon, EyeIcon } from "@heroicons/react/24/outline";
+import Image from "next/image";
 
-const ProjectCard = ({ imgUrl, title, description, gitUrl, previewUrl }) => {
+const ProjectCard = ({
+  skill,
+  imgUrl,
+  title,
+  description,
+  gitUrl,
+  previewUrl,
+}) => {
   return (
     <div>
       <div
@@ -31,6 +39,9 @@ const ProjectCard = ({ imgUrl, title, description, gitUrl, previewUrl }) => {
       <div className="text-white rounded-b-xl px-4 py-6">
         <h5 className="text-xl font-semibold mb-2">{title}</h5>
         <p className="text-slate-200">{description}</p>
+        <div className="relative w-10 h-10">
+          <Image src={skill} alt="skill icon" layout="fill" />
+        </div>
       </div>
     </div>
   );

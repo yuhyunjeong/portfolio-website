@@ -9,6 +9,7 @@ const PROJECT_DATA = [
     title: "Weather app",
     description: "weather application",
     image: "/images/projects/weatherapp_1.gif",
+    skill: "/images/skills/react_2.png",
     tag: ["All", "Web"],
     gitUrl: "https://github.com/yuhyunjeong/weather-app",
     previewUrl: "https://yuhyunjeong.github.io/weather-app/",
@@ -18,6 +19,7 @@ const PROJECT_DATA = [
     title: "Todolist app",
     description: "Todo list application",
     image: "/images/projects/todolist_3.gif",
+    skill: "/images/skills/react_2.png",
     tag: ["All", "Web"],
     gitUrl: "https://github.com/yuhyunjeong/ToDo-list",
     previewUrl: "https://yuhyunjeong.github.io/ToDo-list/",
@@ -27,6 +29,7 @@ const PROJECT_DATA = [
     title: "Space shooting game",
     description: "mini space shooting game",
     image: "/images/projects/shooting_game.gif",
+    skill: "/images/skills/javascript.png",
     tag: ["All", "Web"],
     gitUrl: "https://github.com/yuhyunjeong/shooting-game",
     previewUrl: "https://stunning-fudge-a130bb.netlify.app",
@@ -36,6 +39,7 @@ const PROJECT_DATA = [
     title: "Calendar",
     description: "calendar",
     image: "/images/projects/calendar_2.gif",
+    skill: "/images/skills/javascript.png",
     tag: ["All", "Web"],
     gitUrl: "https://github.com/yuhyunjeong/calendar",
     previewUrl: "https://yuhyunjeong.github.io/calendar/",
@@ -45,6 +49,7 @@ const PROJECT_DATA = [
     title: "Netflix clone",
     description: "clone Netflix webpage",
     image: "/images/projects/netflix-clone.gif",
+    skill: "/images/skills/css.png",
     tag: ["All", "Web"],
     gitUrl: "https://github.com/yuhyunjeong/netflix-clone",
     previewUrl: "",
@@ -93,6 +98,7 @@ const ProjectsSection = ({ imgUrl, title, description }) => {
               title={project.title}
               description={project.description}
               imgUrl={project.image}
+              skill={project.skill}
               gitUrl={project.gitUrl}
               previewUrl={project.previewUrl}
             />
