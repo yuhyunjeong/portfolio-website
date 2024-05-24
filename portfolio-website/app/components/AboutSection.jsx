@@ -8,124 +8,247 @@ const TAB_DATA = [
     title: "Skills",
     id: "skills",
     content: (
-      <ul className="list-disc pl-2 text-lg">
+      <ul className="list-none pl-2 text-lg">
         <li>
-          <div className="text-lg">
+          <div className="text-lg mb-2">
             <div className="socials flex gap-4">
-              <div className="relative w-14 h-14">
-                <Image
-                  src="/images/skills/react_2.png"
-                  alt="react icon"
-                  layout="fill"
-                />
+              <div class="border-2 border-gray-300 rounded-full py-2 px-4 w-36">
+                <div className="socials flex gap-2 items-center">
+                  <div className="relative w-10 h-10">
+                    <Image
+                      src="/images/skills/react_2.png"
+                      alt="react icon"
+                      layout="fill"
+                    />
+                  </div>
+                  React
+                </div>
               </div>
-              <div className="relative w-14 h-14">
-                <Image
-                  src="/images/skills/javascript.png"
-                  alt="javascript icon"
-                  layout="fill"
-                />
+              <div class="border-2 border-gray-300 rounded-full py-2 px-4 w-44">
+                <div className="socials flex gap-2 items-center">
+                  <div className="relative w-10 h-10">
+                    <Image
+                      src="/images/skills/javascript.png"
+                      alt="javascript icon"
+                      layout="fill"
+                    />
+                  </div>
+                  Javascript
+                </div>
               </div>
-              <div className="relative w-14 h-14">
-                <Image
-                  src="/images/skills/css.png"
-                  alt="css icon"
-                  layout="fill"
-                />
+              <div class="border-2 border-gray-300 rounded-full py-2 px-4 w-32">
+                <div className="socials flex gap-2 items-center">
+                  <div className="relative w-10 h-10">
+                    <Image
+                      src="/images/skills/css.png"
+                      alt="css icon"
+                      layout="fill"
+                    />
+                  </div>
+                  CSS
+                </div>
               </div>
-              <div className="relative w-14 h-14">
-                <Image
-                  src="/images/skills/html.png"
-                  alt="html icon"
-                  layout="fill"
-                />
+              <div class="border-2 border-gray-300 rounded-full py-2 px-4 w-36">
+                <div className="socials flex gap-2 items-center">
+                  <div className="relative w-10 h-10">
+                    <Image
+                      src="/images/skills/html.png"
+                      alt="html icon"
+                      layout="fill"
+                    />
+                  </div>
+                  HTML5
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div className="text-lg mb-2">
+            <div className="socials flex gap-4">
+              <div class="border-2 border-gray-300 rounded-full py-2 px-4 w-36">
+                <div className="socials flex gap-2 items-center">
+                  <div className="relative w-10 h-10">
+                    <Image
+                      src="/images/skills/json.png"
+                      alt="json icon"
+                      layout="fill"
+                    />
+                  </div>
+                  JSON
+                </div>
+              </div>
+              <div class="border-2 border-gray-300 rounded-full py-2 px-4 w-36">
+                <div className="socials flex gap-2 items-center">
+                  <div className="relative w-10 h-10">
+                    <Image
+                      src="/images/skills/jquery.png"
+                      alt="jquery icon"
+                      layout="fill"
+                    />
+                  </div>
+                  JQuery
+                </div>
+              </div>
+              <div class="border-2 border-gray-300 rounded-full py-2 px-4 w-44">
+                <div className="socials flex gap-2 items-center">
+                  <div className="relative w-10 h-10">
+                    <Image
+                      src="/images/skills/bootstrap.png"
+                      alt="bootstrap icon"
+                      layout="fill"
+                    />
+                  </div>
+                  Bootstrap
+                </div>
+              </div>
+              <div class="border-2 border-gray-300 rounded-full py-2 px-4 w-38">
+                <div className="socials flex gap-2 items-center">
+                  <div className="relative w-10 h-10">
+                    <Image
+                      src="/images/skills/figma.png"
+                      alt="figma icon"
+                      layout="fill"
+                    />
+                  </div>
+                  Figma
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div className="text-lg mb-2">
+            <div className="socials flex gap-4">
+              <div class="border-2 border-gray-300 rounded-full py-2 px-4 w-36">
+                <div className="socials flex gap-2 items-center">
+                  <div className="relative w-10 h-10">
+                    <Image
+                      src="/images/skills/mysql.png"
+                      alt="mysql icon"
+                      layout="fill"
+                    />
+                  </div>
+                  MySQL
+                </div>
+              </div>
+              <div class="border-2 border-gray-300 rounded-full py-2 px-4 w-36">
+                <div className="socials flex gap-2 items-center">
+                  <div className="relative w-10 h-10">
+                    <Image
+                      src="/images/skills/oracle.png"
+                      alt="oracle icon"
+                      layout="fill"
+                    />
+                  </div>
+                  Oracle
+                </div>
+              </div>
+              <div class="border-2 border-gray-300 rounded-full py-2 px-4 w-36">
+                <div className="socials flex gap-2 items-center">
+                  <div className="relative w-10 h-10">
+                    <Image
+                      src="/images/skills/python.png"
+                      alt="python icon"
+                      layout="fill"
+                    />
+                  </div>
+                  Python
+                </div>
+              </div>
+              <div class="border-2 border-gray-300 rounded-full py-2 px-4 w-32">
+                <div className="socials flex gap-2 items-center">
+                  <div className="relative w-10 h-10">
+                    <Image
+                      src="/images/skills/java.png"
+                      alt="java icon"
+                      layout="fill"
+                    />
+                  </div>
+                  Java
+                </div>
               </div>
             </div>
           </div>
         </li>
         <li>
           <div className="text-lg">
-            <div>Javascript CSS HTML5 SQL Java Python</div>
-          </div>
-        </li>
-        <li>
-          <div className="text-lg">
             <div className="socials flex gap-4">
-              <div className="relative w-14 h-14">
-                <Image
-                  src="/images/skills/jquery.png"
-                  alt="jquery icon"
-                  layout="fill"
-                />
+              <div class="border-2 border-gray-300 rounded-full py-2 px-4 w-28">
+                <div className="socials flex gap-2 items-center">
+                  <div className="relative w-10 h-10">
+                    <Image
+                      src="/images/skills/git.png"
+                      alt="git icon"
+                      layout="fill"
+                    />
+                  </div>
+                  Git
+                </div>
               </div>
-              <div className="relative w-14 h-14">
-                <Image
-                  src="/images/skills/java.png"
-                  alt="java icon"
-                  layout="fill"
-                />
+              <div class="border-2 border-gray-300 rounded-full py-2 px-4 w-44">
+                <div className="socials flex gap-2 items-center">
+                  <div className="relative w-10 h-10">
+                    <Image
+                      src="/images/skills/postman.png"
+                      alt="postman icon"
+                      layout="fill"
+                    />
+                  </div>
+                  POSTMAN
+                </div>
               </div>
-              <div className="relative w-14 h-14">
-                <Image
-                  src="/images/skills/bootstrap.png"
-                  alt="bootstrap icon"
-                  layout="fill"
-                />
+              <div class="border-2 border-gray-300 rounded-full py-2 px-4 w-36">
+                <div className="socials flex gap-2 items-center">
+                  <div className="relative w-10 h-10">
+                    <Image
+                      src="/images/skills/docker.png"
+                      alt="docker icon"
+                      layout="fill"
+                    />
+                  </div>
+                  Docker
+                </div>
+              </div>
+              <div class="border-2 border-gray-300 rounded-full py-2 px-4 w-32">
+                <div className="socials flex gap-2 items-center">
+                  <div className="relative w-10 h-10">
+                    <Image
+                      src="/images/skills/linux.png"
+                      alt="linux icon"
+                      layout="fill"
+                    />
+                  </div>
+                  Linux
+                </div>
+              </div>
+              <div class="border-2 border-gray-300 rounded-full py-2 px-4 w-36">
+                <div className="socials flex gap-2 items-center">
+                  <div className="relative w-10 h-10">
+                    <Image
+                      src="/images/skills/mac.png"
+                      alt="mac icon"
+                      layout="fill"
+                    />
+                  </div>
+                  MacOS
+                </div>
+              </div>
+              <div class="border-2 border-gray-300 rounded-full py-2 px-4 w-36">
+                <div className="socials flex gap-2 items-center">
+                  <div className="relative w-10 h-10">
+                    <Image
+                      src="/images/skills/windows.png"
+                      alt="windows icon"
+                      layout="fill"
+                    />
+                  </div>
+                  Windows
+                </div>
               </div>
             </div>
-            <div>React Next.js JQuery Bootstrap Spring(Boot) JUnit</div>
-          </div>
-        </li>
-        <li>
-          <div className="text-lg">
-            <div className="socials flex gap-4">
-              <div className="relative w-14 h-14">
-                <Image
-                  src="/images/skills/git.png"
-                  alt="git icon"
-                  layout="fill"
-                />
-              </div>
-              <div className="relative w-14 h-14">
-                <Image
-                  src="/images/skills/docker.png"
-                  alt="docker icon"
-                  layout="fill"
-                />
-              </div>
-              <div className="relative w-14 h-14">
-                <Image
-                  src="/images/skills/linux.png"
-                  alt="linux icon"
-                  layout="fill"
-                />
-              </div>
-              <div className="relative w-14 h-14">
-                <Image
-                  src="/images/skills/mac.png"
-                  alt="mac icon"
-                  layout="fill"
-                />
-              </div>
-              <div className="relative w-14 h-14">
-                <Image
-                  src="/images/skills/windows.png"
-                  alt="windows icon"
-                  layout="fill"
-                />
-              </div>
-              <div className="relative w-14 h-14">
-                <Image
-                  src="/images/skills/figma.png"
-                  alt="figma icon"
-                  layout="fill"
-                />
-              </div>
-            </div>
-            <div>
-              Git JSON Docker Linux MacOS Windows VS Code Eclipse Intelli J
-              Figma
-            </div>
+            <div>Next.js Spring(Boot) JUnit</div>
+            <div>JSON VS Code Eclipse Intelli J</div>
           </div>
         </li>
       </ul>
