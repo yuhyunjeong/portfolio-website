@@ -59,6 +59,16 @@ const EmailSection = () => {
               />
             </div>
           </Link>
+          <Link href="https://x.com/yuhyun_dev">
+            <div className="relative w-14 h-14">
+              <Image
+                className="p-2"
+                src="/twitter-icon.png"
+                alt="Twitter Icon"
+                layout="fill"
+              />
+            </div>
+          </Link>
         </div>
 
         <form
