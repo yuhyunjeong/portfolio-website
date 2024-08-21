@@ -297,22 +297,21 @@ const AboutSection = () => {
   };
 
   return (
-    <section className="text-slate-600" id="about">
+    <section className="text-white" id="about">
       <div className="md:grid md:grid-cols gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
-        <div className="mt-4 md:t-0 text-left flex flex-col h-full">
-          <h1 className="text-4xl font-bold mb-4">About me</h1>
-          <p className="text-base lg:text-lg">
-            Hello!👋 I'm a junior web developer with a focus on Vanilla
-            JavaScript, CSS, and diving into React.
+        <div className="mt-4 md:t-0 text-left flex flex-col h-full max-w-3xl place-self-center">
+          <h1 className="text-teal-100 text-2xl font-bold mb-4">About me</h1>
+          <p className="text-base">
+            Hello! 👋 I'm a junior web developer from South Korea 🇰🇷, <br></br>
+            currently on a journey in Canada 🇨🇦.
             <br></br>
             <br></br>I bring experience in full-stack development using
             JavaScript, HTML5, CSS, and Bootstrap on the frontend, and Java,
-            Spring(boot) and SQL on the backend. My toolkit also includes Git,
-            Linux and Docker.
+            Spring(boot) and SQL on the backend. <br></br>
+            My toolkit also includes Git, Linux and Docker.
             <br></br>
             <br></br>
-            Passionate about elevating my skills as a Front-end developer, I've
-            been actively working on various mini projects to enhance my
+            I've been actively working on various mini projects to enhance my
             frontend development skills. Through these projects, I've practiced
             API calls, implemented responsive web design principles, and
             utilized Figma for UI/UX design. My goal is to continue blending
