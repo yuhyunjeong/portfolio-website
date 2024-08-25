@@ -78,14 +78,14 @@ const Navbar = () => {
           {navbarOpen ? (
             <button
               onClick={() => setNavbarOpen(false)}
-              className="flex items-center  px-3 py-2 border-2 rounded border-teal-100  text-teal-100 hover:text-white hover:border-white"
+              className="flex items-center  px-3 py-2 border-2 rounded border-white  text-white hover:text-teal-100 hover:border-teal-100"
             >
               <XMarkIcon className="h-5 w-5" />
             </button>
           ) : (
             <button
               onClick={() => setNavbarOpen(true)}
-              className="flex items-center  px-3 py-2 border-2 rounded border-teal-100  text-teal-100 hover:text-white hover:border-white"
+              className="flex items-center  px-3 py-2 border-2 rounded border-white  text-white hover:text-teal-100 hover:border-teal-100"
             >
               <Bars3Icon className="h-5 w-5" />
             </button>
