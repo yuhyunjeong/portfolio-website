@@ -34,7 +34,7 @@ const PROJECT_DATA = [
     gitUrl: "https://github.com/yuhyunjeong/shooting-game",
     previewUrl: "https://stunning-fudge-a130bb.netlify.app",
   },
-  {
+  /*{
     id: 4,
     title: "Calendar",
     description: "calendar",
@@ -53,7 +53,7 @@ const PROJECT_DATA = [
     tag: ["All", "Web"],
     gitUrl: "https://github.com/yuhyunjeong/netflix-clone",
     previewUrl: "",
-  },
+  },*/
 ];
 
 const ProjectsSection = ({ imgUrl, title, description }) => {
@@ -77,7 +77,10 @@ const ProjectsSection = ({ imgUrl, title, description }) => {
   };
 
   return (
-    <section id="project" class="grid my-12 md:my-12 py-24 gap-4">
+    <section
+      id="project"
+      class="grid my-12 md:my-20 py-12 md:py-20 md:py- gap-4"
+    >
       <h2 className="text-center text-4xl font-bold text-teal-100 m-8">
         Projects
       </h2>
