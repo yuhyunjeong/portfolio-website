@@ -4,8 +4,8 @@ import { TypeAnimation } from "react-type-animation";
 export default function About() {
   return (
     <section>
-      <div className="grid grid-cols-1">
-        <div className="place-self-center mt-20 lg:mt-32 mb-32 max-w-3xl">
+      <div className="grid grid-cols-1 my-12 md:my-20 py-12 md:py-20">
+        <div className="place-self-center max-w-3xl">
           <div className="text-teal-100 text-xl">Hi! I'm</div>
           <h1 className="text-white mt-4 font-extrabold text-4xl md:text-5xl">
             {""}
