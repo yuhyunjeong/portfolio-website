@@ -5,9 +5,9 @@ export default function About() {
   return (
     <section>
       <div className="grid grid-cols-1">
-        <div className="place-self-center mt-32 mb-32 max-w-3xl">
+        <div className="place-self-center mt-20 lg:mt-32 mb-32 max-w-3xl">
           <div className="text-teal-100 text-xl">Hi! I'm</div>
-          <h1 className="text-white mt-4 text-5xl lg:text-5xl font-extrabold">
+          <h1 className="text-white mt-4 font-extrabold text-4xl md:text-5xl">
             {""}
             <TypeAnimation
               sequence={[
@@ -23,7 +23,7 @@ export default function About() {
             />
           </h1>
           <br></br>
-          <div className="text-teal-100 text-4xl mb-4 font-semibold">
+          <div className="text-teal-100 text-3xl md:text-4xl mb-4 font-semibold">
             I'm a web developer.
           </div>
           <p className="text-teal-100 text-xl">

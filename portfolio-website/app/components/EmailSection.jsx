@@ -38,9 +38,9 @@ const EmailSection = () => {
   };
 
   return (
-    <section id="contact" className="grid my-12 md:my-12 py-24 gap-4">
+    <section id="contact" className="grid my-12 md:my-12 py-20 gap-4">
       <div className="flex flex-col">
-        <h5 className="flex justify-center items-center text-white text-2xl font-bold my-4">
+        <h5 className="flex justify-center items-center text-teal-100 text-4xl font-bold my-8">
           Let's Connect!
         </h5>
         <p></p>
@@ -70,7 +70,8 @@ const EmailSection = () => {
             </div>
           </Link>
         </div>
-
+        <p className="flex justify-center ">yuhyunjungdev@gmail.com</p>
+        {/*}
         <form
           className="flex flex-col gap-6 justify-center items-center"
           onSubmit={handleSubmit}
@@ -132,7 +133,7 @@ const EmailSection = () => {
           {emailSubmitted && (
             <p className="text-yellow-200 mt-2">Email sent successfully!</p>
           )}
-        </form>
+        </form>*/}
       </div>
     </section>
   );
