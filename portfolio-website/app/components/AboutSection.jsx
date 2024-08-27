@@ -8,87 +8,80 @@ const TAB_DATA = [
     title: "Skills",
     id: "skills",
     content: (
-      <ul className="list-none pl-2 text-sm">
+      <ul className="list-none text-sm md:text-lg lg:text-xl">
         <li>
           <div className="mb-2">
-            <div className="socials flex gap-4">
-              <div class="border-2 border-gray-300 rounded-full py-2 px-4 w-28">
-                <div className="socials flex gap-2 items-center"># React</div>
+            <div className="socials flex gap-2">
+              <div className="customBullet">
+                <div className="socials flex items-center">React</div>
               </div>
-              <div class="border-2 border-gray-300 rounded-full py-2 px-4 w-44">
-                <div className="socials flex gap-2 items-center">
-                  # React Native
-                </div>
-              </div>
-              <div class="border-2 border-gray-300 rounded-full py-2 px-4 w-32">
-                <div className="socials flex gap-2 items-center"># NEXT.js</div>
+
+              <div className="customBullet">
+                <div className="socials flex  items-center">NEXT.js</div>
               </div>
             </div>
           </div>
         </li>
         <li>
           <div className="mb-2">
-            <div className="socials flex gap-4">
-              <div class="border-2 border-gray-300 rounded-full py-2 px-4 w-40">
-                <div className="socials flex gap-2 items-center">
-                  # Javascript
-                </div>
+            <div className="socials flex gap-2">
+              <div className="customBullet">
+                <div className="socials flex items-center">Javascript</div>
               </div>
-              <div class="border-2 border-gray-300 rounded-full py-2 px-4 w-24">
-                <div className="socials flex gap-2 items-center"># CSS</div>
+              <div className="customBullet">
+                <div className="socials flex items-center">CSS</div>
               </div>
-              <div class="border-2 border-gray-300 rounded-full py-2 px-4 w-28">
-                <div className="socials flex gap-2 items-center"># HTML5</div>
+              <div className="customBullet">
+                <div className="socials flex items-center">HTML5</div>
               </div>
             </div>
           </div>
         </li>
         <li>
           <div className="mb-2">
-            <div className="socials flex gap-4">
-              <div class="border-2 border-gray-300 rounded-full py-2 px-4 w-32">
-                <div className="socials flex gap-2 items-center"># JQuery</div>
+            <div className="socials flex gap-2">
+              <div className="customBullet">
+                <div className="socials flex items-center">Java</div>
               </div>
-              <div class="border-2 border-gray-300 rounded-full py-2 px-4 w-36">
-                <div className="socials flex gap-2 items-center">
-                  # Bootstrap
-                </div>
+              <div className="customBullet">
+                <div className="socials flex items-center">Spring</div>
               </div>
-              <div class="border-2 border-gray-300 rounded-full py-2 px-4 w-38">
-                <div className="socials flex gap-2 items-center"># Figma</div>
+              <div className="customBullet">
+                <div className="socials flex  items-center">Python</div>
               </div>
-            </div>
-          </div>
-        </li>
-        <li>
-          <div className="mb-2">
-            <div className="socials flex gap-4">
-              <div class="border-2 border-gray-300 rounded-full py-2 px-4 w-24">
-                <div className="socials flex gap-2 items-center"># Java</div>
-              </div>
-              <div class="border-2 border-gray-300 rounded-full py-2 px-4 w-32">
-                <div className="socials flex gap-2 items-center"># Spring</div>
-              </div>
-              <div class="border-2 border-gray-300 rounded-full py-2 px-4 w-32">
-                <div className="socials flex gap-2 items-center"># Python</div>
-              </div>
-              <div class="border-2 border-gray-300 rounded-full py-2 px-4 w-24">
-                <div className="socials flex gap-2 items-center"># SQL</div>
+              <div className="customBullet">
+                <div className="socials flex  items-center">SQL</div>
               </div>
             </div>
           </div>
         </li>
         <li>
           <div className="mb-2">
-            <div className="socials flex gap-4">
-              <div class="border-2 border-gray-300 rounded-full py-2 px-4 w-24">
-                <div className="socials flex gap-2 items-center"># Git</div>
+            <div className="socials flex gap-2">
+              <div className="customBullet">
+                <div className="socials flex items-center">JQuery</div>
               </div>
-              <div class="border-2 border-gray-300 rounded-full py-2 px-4 w-32">
-                <div className="socials flex gap-2 items-center"># POSTMAN</div>
+              <div className="customBullet">
+                <div className="socials flex items-center">Bootstrap</div>
               </div>
-              <div class="border-2 border-gray-300 rounded-full py-2 px-4 w-32">
-                <div className="socials flex gap-2 items-center"># Docker</div>
+              <div className="customBullet">
+                <div className="socials flex items-center">Figma</div>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <li>
+          <div className="mb-2">
+            <div className="socials flex gap-2">
+              <div className="customBullet">
+                <div className="socials flex  items-center">POSTMAN</div>
+              </div>
+              <div className="customBullet">
+                <div className="socials flex  items-center">Git</div>
+              </div>
+              <div className="customBullet">
+                <div className="socials flex  items-center">Docker</div>
               </div>
             </div>
           </div>
@@ -116,14 +109,18 @@ const TAB_DATA = [
     id: "education",
     content: (
       <ul className="list-disc pl-2 text-lg">
-        <li>
-          <div>Bachelor of Engineering in Computer Engineering</div>
+        <li className="customBullet mb-4">
+          <div className="mb-2 font-semibold">Computer Engineering</div>
+          <div className="mb-2 text-sm">Bachelor / South Korea</div>
           <div className="text-slate-200">
             National Institute for Lifelong Education (NILE)
           </div>
         </li>
-        <li>
-          <div>Electrical, Electronics and Communication Engineering</div>
+        <li className="customBullet">
+          <div className="mb-2 font-semibold">
+            Electrical, Electronics and Communication Engineering
+          </div>
+          <div className="mb-2 text-sm">2 years / South Korea</div>
           <div className="text-slate-200">
             Korea University of Technology and Education
           </div>
@@ -136,9 +133,44 @@ const TAB_DATA = [
     id: "certification",
     content: (
       <ul className="list-disc pl-2 text-lg">
-        <li>Responsive Web Design</li>
-        <li>SQL Developer</li>
-        <li>Computer specialist in Spreadsheet and database Level 1</li>
+        <li className="customBullet mb-2">
+          Responsive Web Design
+          <div className="text-slate-200">FreeCodeCamp</div>
+        </li>
+        <li className="customBullet mb-2">
+          SQL Developer
+          <div className="text-slate-200">Korea Data Agency</div>
+        </li>
+        <li className="customBullet">
+          Computer specialist in Spreadsheet and database Level 1
+          <div className="text-slate-200">
+            Korea Chamber of Commerce and Industry
+          </div>
+        </li>
+      </ul>
+    ),
+  },
+  {
+    title: "Work",
+    id: "work",
+    content: (
+      <ul className="list-disc pl-2 text-lg">
+        <li className="customBullet mb-4">
+          <div className="mb-2 font-semibold">
+            Full-stack Developer (Full-time){" "}
+          </div>
+          <div className="mb-2 text-sm">
+            Nov. 2022 – Feb. 2023 / South Korea
+          </div>
+          <div className="text-slate-200">Miro IT</div>
+        </li>
+        <li className="customBullet">
+          <div className="mb-2 font-semibold">Software Tester (Part-time)</div>
+          <div className="mb-2 text-sm">
+            Apr. 2023 – Jun. 2023 / South Korea
+          </div>
+          <div className="text-slate-200">Avikus</div>
+        </li>
       </ul>
     ),
   },
@@ -173,19 +205,19 @@ const AboutSection = () => {
               selectTab={() => handleTabChange("skills")}
               active={tab === "skills"}
             >
-              Skills
+              Skill
+            </TabButton>
+            <TabButton
+              selectTab={() => handleTabChange("work")}
+              active={tab === "work"}
+            >
+              Work
             </TabButton>
             <TabButton
               selectTab={() => handleTabChange("education")}
               active={tab === "education"}
             >
               Education
-            </TabButton>
-            <TabButton
-              selectTab={() => handleTabChange("certification")}
-              active={tab === "certification"}
-            >
-              Certification
             </TabButton>
           </div>
           <div className="mt-8 text-white">
