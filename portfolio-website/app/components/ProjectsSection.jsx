@@ -9,13 +9,7 @@ const PROJECT_DATA = [
     title: "Weather app",
     description: "weather application",
     image: "/images/projects/weatherapp_1.gif",
-    skill: [
-      "/images/skills/react_2.png",
-      "/images/skills/javascript.png",
-      "/images/skills/css.png",
-      "/images/skills/html.png",
-      "/images/skills/openweather.png",
-    ],
+    skill: ["#React", "#JavaScript", "#CSS", "#HTML", "#OpenWeatherAPI"],
     tag: ["All", "Web"],
     gitUrl: "https://github.com/yuhyunjeong/weather-app",
     previewUrl: "https://yuhyunjeong.github.io/weather-app/",
@@ -25,12 +19,7 @@ const PROJECT_DATA = [
     title: "Todolist app",
     description: "Todo list application",
     image: "/images/projects/todolist_3.gif",
-    skill: [
-      "/images/skills/react_2.png",
-      "/images/skills/javascript.png",
-      "/images/skills/css.png",
-      "/images/skills/html.png",
-    ],
+    skill: ["#React", "#JavaScript", "#CSS", "#HTML"],
     tag: ["All", "Web"],
     gitUrl: "https://github.com/yuhyunjeong/ToDo-list",
     previewUrl: "https://yuhyunjeong.github.io/ToDo-list/",
@@ -40,21 +29,17 @@ const PROJECT_DATA = [
     title: "Space shooting game",
     description: "mini space shooting game",
     image: "/images/projects/shooting_game.gif",
-    skill: ["/images/skills/javascript.png", "/images/skills/html.png"],
+    skill: ["#JavaScript", "#HTML", "#CanvasAPI"],
     tag: ["All", "Web"],
     gitUrl: "https://github.com/yuhyunjeong/shooting-game",
     previewUrl: "https://stunning-fudge-a130bb.netlify.app",
   },
-  {
+  /*{
     id: 4,
     title: "Calendar",
     description: "calendar",
     image: "/images/projects/calendar_2.gif",
-    skill: [
-      "/images/skills/javascript.png",
-      "/images/skills/css.png",
-      "/images/skills/html.png",
-    ],
+    skill: ["#JavaScript", "#CSS", "#HTML"],
     tag: ["All", "Web"],
     gitUrl: "https://github.com/yuhyunjeong/calendar",
     previewUrl: "https://yuhyunjeong.github.io/calendar/",
@@ -64,11 +49,11 @@ const PROJECT_DATA = [
     title: "Netflix clone",
     description: "clone Netflix webpage",
     image: "/images/projects/netflix-clone.gif",
-    skill: ["/images/skills/css.png", "/images/skills/html.png"],
+    skill: ["#CSS", "#HTML"],
     tag: ["All", "Web"],
     gitUrl: "https://github.com/yuhyunjeong/netflix-clone",
     previewUrl: "",
-  },
+  },*/
 ];
 
 const ProjectsSection = ({ imgUrl, title, description }) => {
@@ -92,9 +77,12 @@ const ProjectsSection = ({ imgUrl, title, description }) => {
   };
 
   return (
-    <section id="project" class="grid my-12 md:my-12 py-24 gap-4">
-      <h2 className="text-center text-4xl font-bold text-white m-8">
-        My Projects
+    <section
+      id="project"
+      class="grid my-12 md:my-20 py-12 md:py-20 md:py- gap-4"
+    >
+      <h2 className="text-center text-4xl font-bold text-teal-100 m-8">
+        Projects
       </h2>
 
       <ul ref={ref} className="grid md:grid-cols-3 gap-8 md:gap-12">

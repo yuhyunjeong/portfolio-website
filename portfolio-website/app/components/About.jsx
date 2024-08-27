@@ -4,20 +4,17 @@ import { TypeAnimation } from "react-type-animation";
 export default function About() {
   return (
     <section>
-      <div className="grid grid-cols-1 ">
-        <div className="place-self-center text-center">
-          <h1 className="text-slate-600 mb-4 text-4xl lg:text-6xl font-extrabold">
+      <div className="grid grid-cols-1 my-12 md:my-20 py-12 md:py-20">
+        <div className="place-self-center max-w-3xl">
+          <div className="text-teal-100 text-xl">Hi! I'm</div>
+          <h1 className="text-white mt-4 font-extrabold text-4xl md:text-5xl">
             {""}
             <TypeAnimation
               sequence={[
                 // Same substring at the start will only be typed out once, initially
-                "Yuhyun",
+                "Jade Jung.",
                 1000, // wait 1s before replacing "Mice" with "Hamsters"
-                "Jade",
-                1000,
-                "web developer",
-                1000,
-                "frontend developer",
+                "Yuhyun Jung.",
                 1000,
               ]}
               wrapper="span"
@@ -26,10 +23,12 @@ export default function About() {
             />
           </h1>
           <br></br>
-          <p className="text-slate-600 text-lg lg:text-xl">
-            on a journey from 🇰🇷 to 🇨🇦
-            <br></br>love drawing nature on canvas 🎨
-            <br></br>runner 👟
+          <div className="text-teal-100 text-3xl md:text-4xl mb-4 font-semibold">
+            I'm a web developer.
+          </div>
+          <p className="text-teal-100 text-xl">
+            My goal is to continue blending functionality with eye-catching UX
+            design as I further develop my frontend expertise.
           </p>
         </div>
       </div>
