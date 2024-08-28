@@ -156,16 +156,14 @@ const TAB_DATA = [
     content: (
       <ul className="list-disc pl-2 text-lg">
         <li className="customBullet mb-4">
-          <div className="mb-2 font-semibold">
-            Full-stack Developer (Full-time){" "}
-          </div>
+          <div className="mb-2 font-semibold">Full-stack Developer</div>
           <div className="mb-2 text-sm">
             Nov. 2022 – Feb. 2023 / South Korea
           </div>
           <div className="text-slate-200">Miro IT</div>
         </li>
         <li className="customBullet">
-          <div className="mb-2 font-semibold">Software Tester (Part-time)</div>
+          <div className="mb-2 font-semibold">Software Tester</div>
           <div className="mb-2 text-sm">
             Apr. 2023 – Jun. 2023 / South Korea
           </div>
@@ -191,7 +189,7 @@ const AboutSection = () => {
         <div className="mt-4 md:t-0 text-left flex flex-col h-full max-w-3xl place-self-center">
           <h1 className="text-teal-100 text-2xl font-bold mb-4">About me</h1>
           <p className="text-base">
-            Hello!👋 I'm a junior web developer from South Korea🇰🇷, <br></br>
+            Hello! I&apos;m a junior web developer from South Korea🇰🇷, <br></br>
             currently on a journey in Canada🇨🇦.
             <br></br>
             <br></br>

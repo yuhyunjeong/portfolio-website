@@ -92,6 +92,7 @@ const ProjectsSection = ({ imgUrl, title, description }) => {
             initial="initial"
             animate={isInView ? "animate" : "initial"}
             transition={{ duration: 0.3, delay: index * 0.4 }}
+            key={index}
           >
             {/** Initially, the initial state is applied, and the animation is activated when the corresponding section is visible on the screen.
              *

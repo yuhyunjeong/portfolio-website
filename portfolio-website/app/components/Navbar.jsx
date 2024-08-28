@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import React, { useState, useEffect } from "react";
+import React, { useRef, useState, useEffect } from "react";
 
 import NavLink from "./NavLink";
 import Menu from "./Menu";
@@ -29,13 +29,13 @@ const Navbar = () => {
 
   const [isHidden, setHidden] = useState(false);
   const [isScrolled, setScrolled] = useState(false);
-  let lastScrollTop = 0;
+  let lastScrollTop = useRef(0);
 
   useEffect(() => {
     const handleScroll = () => {
       const currentScrollTop = window.scrollY;
 
-      if (currentScrollTop > lastScrollTop) {
+      if (currentScrollTop > lastScrollTop.current) {
         // Scroll down
         setHidden(true);
         setScrolled(false);
@@ -48,7 +48,7 @@ const Navbar = () => {
         setHidden(false);
         setScrolled(true);
       }
-      lastScrollTop = currentScrollTop;
+      lastScrollTop.current = currentScrollTop;
     };
 
     window.addEventListener("scroll", handleScroll);

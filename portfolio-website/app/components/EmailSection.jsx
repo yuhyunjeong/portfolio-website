@@ -41,7 +41,7 @@ const EmailSection = () => {
     <section id="contact" className="grid my-12 md:my-20 py-12 md:py-20 gap-4">
       <div className="flex flex-col">
         <h5 className="flex justify-center items-center text-center text-teal-100 text-4xl font-bold my-8">
-          Let's Connect!
+          Let&apos; Connect!
         </h5>
         <div className="socials flex justify-center gap-4 mb-4">
           <Link href="https://github.com/yuhyunjeong/">
