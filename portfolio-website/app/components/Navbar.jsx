@@ -63,7 +63,7 @@ const Navbar = () => {
       id="navbar"
       className={`${
         isHidden ? "-translate-y-full" : isScrolled ? "shadow-lg" : ""
-      } fixed w-full top-0 left-0 z-50 transition-all duration-500 ease-in-out bg-[#eec1e6]`}
+      } fixed w-full top-0 left-0 z-50 transition-all duration-500 ease-in-out bg-[#d8bfd8]`}
     >
       <div className="flex flex-wrap items-center justify-between mx-auto py-6 lg:py-4 pl-7 pr-5">
         <Link

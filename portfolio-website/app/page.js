@@ -8,7 +8,7 @@ import Footer from "./components/Footer";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col bg-gradient-to-tl bg-[#eec1e6] font-mono">
+    <main className="flex min-h-screen flex-col bg-gradient-to-tl bg-[#d8bfd8] font-mono">
       <Navbar />
       <div class=" mt-24  px-12 py-4 ">
         <About />
