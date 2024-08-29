@@ -43,7 +43,7 @@ const ProjectCard = ({
         </div>
       </div>
       <div className="text-white rounded-b-xl px-4 py-6">
-        <h5 className="text-teal-100 text-xl font-semibold mb-2">{title}</h5>
+        <h5 className="text-teal-100 text-xl !font-semibold mb-2">{title}</h5>
         {/*<p className="text-white mb-2">{description}</p>*/}
         <div className="relative w-10 h-10 ">
           {skill.map((item, index) => (
