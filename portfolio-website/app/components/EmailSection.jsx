@@ -70,7 +70,7 @@ const EmailSection = () => {
           </Link>
         </div>
         <p className="flex justify-center text-black text-lg font-medium">
-          yuhyunjungdev@gmail.com
+          contact@jadejung.com
         </p>
         {/*}
         <form
