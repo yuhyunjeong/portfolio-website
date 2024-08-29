@@ -7,7 +7,7 @@ export default function About() {
       <div className="grid grid-cols-1 my-12 md:my-20 py-12 md:py-20">
         <div className="place-self-center max-w-3xl">
           <div className="text-teal-100 text-xl">Hi! I&apos;m</div>
-          <h1 className="text-white mt-4 !font-extrabold text-4xl md:text-5xl">
+          <h1 className="text-white mt-4 !font-extrabold text-4xl md:text-6xl">
             {""}
             <TypeAnimation
               sequence={[
@@ -23,7 +23,7 @@ export default function About() {
             />
           </h1>
           <br></br>
-          <div className="text-teal-100 text-3xl md:text-4xl mb-4 !font-semibold">
+          <div className="text-teal-100 text-3xl md:text-5xl mb-4 !font-semibold">
             I&apos;m a web developer.
           </div>
           <p className="text-teal-100 text-xl">
