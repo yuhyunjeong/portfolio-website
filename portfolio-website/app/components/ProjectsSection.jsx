@@ -9,7 +9,7 @@ const PROJECT_DATA = [
     title: "Weather app",
     description: "weather application",
     image: "/images/projects/weatherapp_1.gif",
-    skill: ["#React", "#JavaScript", "#CSS", "#HTML", "#OpenWeatherAPI"],
+    skill: ["#React", "#JavaScript", "#CSS", "#HTML"],
     tag: ["All", "Web"],
     gitUrl: "https://github.com/yuhyunjeong/weather-app",
     previewUrl: "https://yuhyunjeong.github.io/weather-app/",
