@@ -15,6 +15,13 @@
     --background-end-rgb: 0, 0, 0;
   }
 }
+
+@media only screen and (max-width: 600px) {
+  .customBullet::before {
+    color: rgb(204 251 241) !important;
+  }
+}
+
 body {
   /*
   color: rgb(var(--foreground-rgb));
