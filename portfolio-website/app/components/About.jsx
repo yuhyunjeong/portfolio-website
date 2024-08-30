@@ -26,7 +26,7 @@ export default function About() {
           <div className="text-teal-100 text-3xl md:text-5xl mb-4 !font-semibold">
             I&apos;m a web developer.
           </div>
-          <p className="text-teal-100 text-xl font-sans">
+          <p className="text-teal-100 text-xl md:text-2xl font-sans">
             My goal is to continue blending functionality with eye-catching UX
             design as I further develop my frontend expertise.
           </p>
