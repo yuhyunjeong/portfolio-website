@@ -37,7 +37,7 @@ body {
   .customBullet::before {
     content: "❤︎"; /* 원하는 아이콘으로 변경 */
     position: absolute;
-    color: rgb(204 251 241);
+    color: rgb(204 251 241) !important;
     left: 0;
     top: 0;
   }

@@ -8,83 +8,54 @@ const TAB_DATA = [
     title: "Skills",
     id: "skills",
     content: (
-      <ul className="list-none text-sm md:text-lg lg:text-xl">
-        <li>
-          <div className="mb-2">
-            <div className="socials flex gap-2">
-              <div className="customBullet">
-                <div className="socials flex items-center">React</div>
-              </div>
-
-              <div className="customBullet">
-                <div className="socials flex  items-center">NEXT.js</div>
-              </div>
-            </div>
-          </div>
+      <ul className="list-none text-sm md:text-lg lg:text-xl grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+        <li className="customBullet">
+          <div className="socials flex items-center">React</div>
         </li>
-        <li>
-          <div className="mb-2">
-            <div className="socials flex gap-2">
-              <div className="customBullet">
-                <div className="socials flex items-center">Javascript</div>
-              </div>
-              <div className="customBullet">
-                <div className="socials flex items-center">CSS</div>
-              </div>
-              <div className="customBullet">
-                <div className="socials flex items-center">HTML5</div>
-              </div>
-            </div>
-          </div>
+        <li className="customBullet">
+          <div className="socials flex  items-center">NEXT.js</div>
         </li>
-        <li>
-          <div className="mb-2">
-            <div className="socials flex gap-2">
-              <div className="customBullet">
-                <div className="socials flex items-center">Java</div>
-              </div>
-              <div className="customBullet">
-                <div className="socials flex items-center">Spring</div>
-              </div>
-              <div className="customBullet">
-                <div className="socials flex  items-center">Python</div>
-              </div>
-              <div className="customBullet">
-                <div className="socials flex  items-center">SQL</div>
-              </div>
-            </div>
-          </div>
+        <li className="customBullet">
+          <div className="socials flex items-center">Javascript</div>
         </li>
-        <li>
-          <div className="mb-2">
-            <div className="socials flex gap-2">
-              <div className="customBullet">
-                <div className="socials flex items-center">JQuery</div>
-              </div>
-              <div className="customBullet">
-                <div className="socials flex items-center">Bootstrap</div>
-              </div>
-              <div className="customBullet">
-                <div className="socials flex items-center">Figma</div>
-              </div>
-            </div>
-          </div>
+        <li className="customBullet">
+          <div className="socials flex items-center">CSS</div>
+        </li>
+        <li className="customBullet">
+          <div className="socials flex items-center">HTML5</div>
         </li>
 
-        <li>
-          <div className="mb-2">
-            <div className="socials flex gap-2">
-              <div className="customBullet">
-                <div className="socials flex  items-center">POSTMAN</div>
-              </div>
-              <div className="customBullet">
-                <div className="socials flex  items-center">Git</div>
-              </div>
-              <div className="customBullet">
-                <div className="socials flex  items-center">Docker</div>
-              </div>
-            </div>
-          </div>
+        <li className="customBullet">
+          <div className="socials flex items-center">JQuery</div>
+        </li>
+        <li className="customBullet">
+          <div className="socials flex items-center">Bootstrap</div>
+        </li>
+        <li className="customBullet">
+          <div className="socials flex items-center">Figma</div>
+        </li>
+
+        <li className="customBullet">
+          <div className="socials flex items-center">Java</div>
+        </li>
+        <li className="customBullet">
+          <div className="socials flex items-center">Spring</div>
+        </li>
+        <li className="customBullet">
+          <div className="socials flex  items-center">Python</div>
+        </li>
+        <li className="customBullet">
+          <div className="socials flex  items-center">SQL</div>
+        </li>
+
+        <li className="customBullet">
+          <div className="socials flex  items-center">POSTMAN</div>
+        </li>
+        <li className="customBullet">
+          <div className="socials flex  items-center">Git</div>
+        </li>
+        <li className="customBullet">
+          <div className="socials flex  items-center">Docker</div>
         </li>
         {/* <li>
           <div className="text-lg">
