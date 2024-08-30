@@ -162,8 +162,9 @@ const AboutSection = () => {
             About me
           </h1>
           <p className="text-base md:text-lg">
-            Hello! I&apos;m a junior web developer from South Korea🇰🇷, <br></br>
-            currently on a journey in Canada🇨🇦.
+            Hello! I&apos;m a junior web developer from South Korea 🇰🇷,{" "}
+            <br></br>
+            currently on a journey in Canada 🇨🇦.
             <br></br>
             <br></br>
             I have experience as a full-stack developer. <br />
