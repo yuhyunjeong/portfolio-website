@@ -8,7 +8,7 @@ const TAB_DATA = [
     title: "Skills",
     id: "skills",
     content: (
-      <ul className="list-none text-sm md:text-lg lg:text-xl grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+      <ul className="list-none md:text-lg lg:text-xl grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
         <li className="customBullet">
           <div className="socials flex items-center">React</div>
         </li>
