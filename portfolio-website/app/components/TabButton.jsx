@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import React from "react";
 
 const variants = {
-  default: { width: 0 },
+  default: { width: 0 } /** The width of the border is set to 0 */,
   active: { width: "calc(100% - 0.75rem)" },
 };
 
