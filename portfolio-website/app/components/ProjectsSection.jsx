@@ -79,7 +79,7 @@ const ProjectsSection = ({ imgUrl, title, description }) => {
   return (
     <section
       id="project"
-      class="grid my-12 md:my-20 py-12 md:py-20 md:py- gap-4"
+      className="grid my-12 md:my-20 py-12 md:py-20 md:py- gap-4"
     >
       <h2 className="text-center text-4xl !font-bold text-teal-100 m-8">
         Projects

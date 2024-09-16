@@ -72,7 +72,7 @@ const Navbar = () => {
         >
           <div className="relative w-10 h-10">
             <Image
-              src="https://www.dropbox.com/scl/fi/lng9ecwe6fw1aepy0aat3/logo_4.png?rlkey=z1m7s7bg536tz41wi27q2rap2&st=b8vgggn3&raw=1"
+              src="https://www.dropbox.com/scl/fi/lng9ecwe6fw1aepy0aat3/logo_4.png?rlkey=z1m7s7bg536tz41wi27q2rap2&st=le1vflar&raw=1"
               alt="logo"
               fill
             />
