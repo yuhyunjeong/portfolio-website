@@ -75,6 +75,7 @@ const Navbar = () => {
               src="https://www.dropbox.com/scl/fi/lng9ecwe6fw1aepy0aat3/logo_4.png?rlkey=z1m7s7bg536tz41wi27q2rap2&st=le1vflar&raw=1"
               alt="logo"
               fill
+              unoptimized
             />
           </div>
         </Link>

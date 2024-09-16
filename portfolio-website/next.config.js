@@ -5,7 +5,6 @@ const nextConfig = {
       {
         protocol: "https",
         hostname: "www.dropbox.com",
-        pathname: "/scl/**",
       },
     ],
   },
