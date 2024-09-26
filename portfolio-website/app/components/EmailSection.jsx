@@ -46,7 +46,12 @@ const EmailSection = () => {
         <div className="socials flex justify-center gap-4 mb-4">
           <Link href="https://github.com/yuhyunjeong/">
             <div className="relative w-14 h-14">
-              <Image src="/github-icon.png" alt="Github Icon" layout="fill" />
+              <Image
+                src="/github-icon.png"
+                alt="Github Icon"
+                width={100}
+                height={100}
+              />
             </div>
           </Link>
           <Link href="https://www.linkedin.com/in/yuhyun-jade-jung-1b14a2290/">
@@ -54,7 +59,8 @@ const EmailSection = () => {
               <Image
                 src="/linkedin-icon.png"
                 alt="Linkedin Icon"
-                layout="fill"
+                width={100}
+                height={100}
               />
             </div>
           </Link>
@@ -64,7 +70,8 @@ const EmailSection = () => {
                 className="p-2"
                 src="/twitter-icon.png"
                 alt="Twitter Icon"
-                layout="fill"
+                width={100}
+                height={100}
               />
             </div>
           </Link>
