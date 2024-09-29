@@ -18,7 +18,7 @@ const PROJECT_DATA = [
     id: 2,
     title: "Todolist app",
     description: "Todo list application",
-    image: "/images/projects/todolist_3.gif",
+    image: "/images/projects/Todo.gif",
     skill: ["#React", "#JavaScript", "#CSS", "#HTML"],
     tag: ["All", "Web"],
     gitUrl: "https://github.com/yuhyunjeong/ToDo-list",
