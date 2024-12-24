@@ -45,6 +45,10 @@ export default function Snowfall() {
             width: `${flake.size}px`,
             height: `${flake.size}px`,
             animation: `fall ${flake.duration}s linear forwards`,
+
+            // Blur Snowflakes
+            boxShadow: "0 0 5px 3px rgba(255, 255, 255, 0.3)",
+            //filter: "drop-shadow(0 0 5px rgba(255, 255, 255, 0.8))",
           }}
         />
       ))}
