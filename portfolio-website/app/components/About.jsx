@@ -1,30 +1,11 @@
 "use client";
-import React, { useRef } from "react";
 import { TypeAnimation } from "react-type-animation";
-import confetti from "canvas-confetti";
 
 export default function About() {
-  const confettiRef = useRef(null);
-
-  const handleConfetti = () => {
-    confetti({
-      particleCount: 1000,
-      spread: 100,
-      origin: { y: 0.7 },
-    });
-  };
-
   return (
     <section>
       <div className="grid grid-cols-1 my-12 md:my-20 py-12 md:py-20">
         <div className="place-self-center max-w-3xl">
-          {/* Fixed button on the left side, with a high z-index */}
-          <button
-            onClick={handleConfetti}
-            className="fixed top-1/4 left-8 transform -translate-y-1/2  px-4 py-2 bg-pink-500 text-white rounded-md z-50"
-          >
-            Happy New Year!
-          </button>
           <div className="text-teal-100 text-xl">Hi! I&apos;m</div>
           <h1 className="text-white mt-4 !font-extrabold text-4xl md:text-6xl">
             {""}
