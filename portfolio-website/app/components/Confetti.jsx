@@ -19,7 +19,7 @@ export default function Confetti() {
       onTouchStart={handleConfetti} // touch in mobile
       className="
         fixed 
-        top-4 
+        top-6 
         left-1/2 
         -translate-x-1/2 
         bg-pink-500 
