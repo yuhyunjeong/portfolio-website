@@ -6,16 +6,17 @@ import confetti from "canvas-confetti";
 export default function Confetti() {
   const handleConfetti = () => {
     confetti({
-      particleCount: 1000,
+      particleCount: 2000,
       spread: 360,
-      origin: { y: 0.6 },
+      origin: { y: 0.5 },
     });
   };
 
   return (
     /* Fixed button on the top, with a high z-index */
     <button
-      onMouseEnter={handleConfetti}
+      onMouseEnter={handleConfetti} // hover in PC
+      onTouchStart={handleConfetti} // touch in mobile
       className="
         fixed 
         top-4 
