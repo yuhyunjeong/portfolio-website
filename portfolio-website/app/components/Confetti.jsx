@@ -22,7 +22,7 @@ export default function Confetti() {
         top-6 
         left-1/2 
         -translate-x-1/2 
-        bg-pink-400 
+        bg-purple-500 
         text-white 
         px-4 
         py-2 
