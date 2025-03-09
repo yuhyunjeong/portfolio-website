@@ -1,6 +1,21 @@
-# portfolio
+# 💖 🖥️ personal website  
+www.jadejung.com
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-B2F5EA.svg)](https://opensource.org/licenses/MIT) 
+
+## License
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
 ## 💻 Process
+
+1. **Development (Frontend):**  
+   - The project was built using <img src="https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white" /> <img src="https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black" /> with <img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=flat-square&logo=tailwind-css&logoColor=white" /> for styling.  
+   
+2. **Deployment (Hosting):**  
+   - The site is hosted on <img src="https://img.shields.io/badge/Vercel-000000?style=flat-square&logo=vercel&logoColor=white" /> for seamless deployment and performance.  
+
+3. **Custom Domain:**  
+   - A domain was purchased via <img src="https://img.shields.io/badge/Namecheap-DC3912?style=flat-square&logo=namecheap&logoColor=white" /> and configured to point to <img src="https://img.shields.io/badge/Vercel-000000?style=flat-square&logo=vercel&logoColor=white" />.  
 
 ## ✅ What I Learned
 
