@@ -3,6 +3,14 @@ import React, { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faGithub,
+  faLinkedin,
+  faXTwitter,
+  faCodepen,
+} from "@fortawesome/free-brands-svg-icons";
+
 const EmailSection = () => {
   const [emailSubmitted, setEmailSubmitted] = useState(false);
   const handleSubmit = async (e) => {
@@ -43,38 +51,42 @@ const EmailSection = () => {
         <h5 className="flex justify-center items-center text-center text-teal-100 text-4xl !font-bold my-8">
           Let&apos;s Connect!
         </h5>
-        <div className="socials flex justify-center gap-4 mb-4">
-          <Link href="https://github.com/yuhyunjeong/">
-            <div className="relative w-14 h-14">
-              <Image
-                src="/github-icon.png"
-                alt="Github Icon"
-                width={100}
-                height={100}
-              />
-            </div>
-          </Link>
-          <Link href="https://www.linkedin.com/in/yuhyun-jade-jung-1b14a2290/">
-            <div className="relative w-14 h-14">
-              <Image
-                src="/linkedin-icon.png"
-                alt="Linkedin Icon"
-                width={100}
-                height={100}
-              />
-            </div>
-          </Link>
-          <Link href="https://x.com/yuhyun_dev">
-            <div className="relative w-14 h-14">
-              <Image
-                className="p-2"
-                src="/twitter-icon.png"
-                alt="Twitter Icon"
-                width={100}
-                height={100}
-              />
-            </div>
-          </Link>
+
+        <div className="flex justify-center space-x-4 mb-4 text-2xl">
+          {/*  Open the link in a new tab 
+          and protect the original page from potential security risks. */}
+          <a
+            href="https://github.com/yuhyunjeong/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-teal-100 transition-colors"
+          >
+            <FontAwesomeIcon icon={faGithub} className="w-10 h-10" />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/yuhyun-jade-jung-1b14a2290/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-teal-100 transition-colors"
+          >
+            <FontAwesomeIcon icon={faLinkedin} className="w-10 h-10" />
+          </a>
+          <a
+            href="https://x.com/yuhyun_dev"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-teal-100 transition-colors"
+          >
+            <FontAwesomeIcon icon={faXTwitter} className="w-10 h-10" />
+          </a>
+          <a
+            href="https://codepen.io/yuhyunjeong"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-teal-100 transition-colors"
+          >
+            <FontAwesomeIcon icon={faCodepen} className="w-10 h-10" />
+          </a>
         </div>
         <p className="flex justify-center text-black text-lg font-medium">
           contact@jadejung.com
