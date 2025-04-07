@@ -129,14 +129,14 @@ const TAB_DATA = [
         <li className="customBullet mb-4">
           <div className="mb-2 font-semibold">Full-stack Developer</div>
           <div className="mb-2 text-sm">
-            Nov. 2022 – Feb. 2023 / South Korea
+            Nov. 2022 – Feb. 2023 / Seoul, South Korea
           </div>
           <div className="text-slate-200">Miro IT</div>
         </li>
         <li className="customBullet">
           <div className="mb-2 font-semibold">Software Tester</div>
           <div className="mb-2 text-sm">
-            Apr. 2023 – Jun. 2023 / South Korea
+            Apr. 2023 – Jun. 2023 / Seoul, South Korea
           </div>
           <div className="text-slate-200">Avikus</div>
         </li>
@@ -162,8 +162,7 @@ const AboutSection = () => {
             About me
           </h1>
           <p className="text-base md:text-lg">
-            Hello! I&apos;m a junior web developer from South Korea 🇰🇷,{" "}
-            <br></br>
+            Hello! I&apos;m a web developer from South Korea 🇰🇷, <br></br>
             currently on a journey in Canada 🇨🇦.
             <br></br>
             <br></br>
