@@ -1,70 +1,44 @@
 "use client";
-import React, { useRef } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import ProjectCard from "./ProjectCard";
 import { motion, isInView, useInView } from "framer-motion";
-
-const PROJECT_DATA = [
-  {
-    id: 1,
-    title: "Weather app",
-    description: "weather application",
-    image: "/images/projects/weatherapp_1.gif",
-    skill: ["#React", "#JavaScript", "#CSS", "#HTML"],
-    tag: ["All", "Web"],
-    gitUrl: "https://github.com/yuhyunjeong/weather-app",
-    previewUrl: "https://yuhyunjeong.github.io/weather-app/",
-  },
-  {
-    id: 2,
-    title: "Todolist app",
-    description: "Todo list application",
-    image: "/images/projects/Todo.gif",
-    skill: ["#React", "#JavaScript", "#CSS", "#HTML"],
-    tag: ["All", "Web"],
-    gitUrl: "https://github.com/yuhyunjeong/ToDo-list",
-    previewUrl: "https://yuhyunjeong.github.io/ToDo-list/",
-  },
-  {
-    id: 3,
-    title: "Space shooting game",
-    description: "mini space shooting game",
-    image: "/images/projects/shooting_game.gif",
-    skill: ["#JavaScript", "#HTML", "#CanvasAPI"],
-    tag: ["All", "Web"],
-    gitUrl: "https://github.com/yuhyunjeong/shooting-game",
-    previewUrl: "https://stunning-fudge-a130bb.netlify.app",
-  },
-  /*{
-    id: 4,
-    title: "Calendar",
-    description: "calendar",
-    image: "/images/projects/calendar_2.gif",
-    skill: ["#JavaScript", "#CSS", "#HTML"],
-    tag: ["All", "Web"],
-    gitUrl: "https://github.com/yuhyunjeong/calendar",
-    previewUrl: "https://yuhyunjeong.github.io/calendar/",
-  },
-  {
-    id: 5,
-    title: "Netflix clone",
-    description: "clone Netflix webpage",
-    image: "/images/projects/netflix-clone.gif",
-    skill: ["#CSS", "#HTML"],
-    tag: ["All", "Web"],
-    gitUrl: "https://github.com/yuhyunjeong/netflix-clone",
-    previewUrl: "",
-  },*/
-];
+import { supabase } from "../util/supabase/client";
 
 const ProjectsSection = ({ imgUrl, title, description }) => {
-  const ref = useRef(null);
   {
     /** It creates a reference for the section using useRef. */
   }
-  const isInView = useInView(ref, { once: true });
+  const ref = useRef(null);
+
   {
     /** It detects whether the section is in view using the useInView hook, ensuring it only triggers once. */
   }
+  const isInView = useInView(ref, { once: true });
+
+  const [projects, setProjects] = useState([]);
+
+  {
+    /* Data from database */
+  }
+  useEffect(() => {
+    async function fetchProjects() {
+      const { data, error } = await supabase
+        .from("projects")
+        .select("*")
+        .order("order", { ascending: true });
+
+      console.log("Fetched Data:", data);
+
+      if (error) {
+        console.error("Supabase fetch error:", error.message);
+      } else {
+        setProjects(data);
+      }
+    }
+
+    fetchProjects();
+  }, []);
+
   {
     /** Defines initial and animation states for the project cards using the cardVariants object.
      * The initial state is a translation of 50 along the y-axis and a transparency of 0.
@@ -86,13 +60,13 @@ const ProjectsSection = ({ imgUrl, title, description }) => {
       </h2>
 
       <ul ref={ref} className="grid md:grid-cols-3 gap-8 md:gap-12">
-        {PROJECT_DATA.map((project, index) => (
+        {projects.map((project, index) => (
           <motion.li
+            key={project.id}
             variants={cardVariants}
             initial="initial"
             animate={isInView ? "animate" : "initial"}
             transition={{ duration: 0.3, delay: index * 0.4 }}
-            key={index}
           >
             {/** Initially, the initial state is applied, and the animation is activated when the corresponding section is visible on the screen.
              *
@@ -101,10 +75,10 @@ const ProjectsSection = ({ imgUrl, title, description }) => {
               key={project.id}
               title={project.title}
               description={project.description}
-              imgUrl={project.image}
-              skill={project.skill}
-              gitUrl={project.gitUrl}
-              previewUrl={project.previewUrl}
+              imgUrl={project.image_url}
+              skill={project.tech_stack}
+              gitUrl={project.repo_url}
+              previewUrl={project.project_url}
             />
           </motion.li>
         ))}

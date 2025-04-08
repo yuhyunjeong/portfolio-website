@@ -48,7 +48,7 @@ const ProjectCard = ({
         <div className="relative w-10 h-10 ">
           {skill.map((item, index) => (
             <span key={index} className="mr-2">
-              {item}
+              #{item}
             </span>
           ))}
         </div>
