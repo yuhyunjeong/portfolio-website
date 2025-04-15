@@ -9,6 +9,8 @@ import Menu from "./Menu";
 
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
 
+import { supabase } from "../util/supabase/client";
+
 const navLink = [
   {
     title: "About",
@@ -30,6 +32,29 @@ const Navbar = () => {
   const [isHidden, setHidden] = useState(false);
   const [isScrolled, setScrolled] = useState(false);
   let lastScrollTop = useRef(0);
+
+  const [logo, setLogo] = useState(null);
+
+  useEffect(() => {
+    async function fetchLogo() {
+      const { data, error } = await supabase
+        .from("logo")
+        .select("*")
+        .maybeSingle(); // fetch one row if exists, or return null
+
+      console.log("logo:", data);
+
+      console.log("logo.image_url:", logo?.image_url);
+
+      if (error) {
+        console.error("Supabase fetch error:", error.message);
+      } else {
+        setLogo(data);
+      }
+    }
+
+    fetchLogo();
+  }, []);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -70,9 +95,11 @@ const Navbar = () => {
           href={"/"}
           className="text-2xl md:text-5xl text-slate-200 font-semibold"
         >
-          <div className="relative w-10 h-10">
-            <Image src="/images/logo_4.png" alt="logo" fill />
-          </div>
+          {logo?.image_url && (
+            <div className="relative w-10 h-10">
+              <Image src={logo.image_url} alt={logo.alt_text || "logo"} fill />
+            </div>
+          )}
         </Link>
         <div className="mobile-menu block md:hidden">
           {navbarOpen ? (
