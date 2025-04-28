@@ -13,7 +13,7 @@ export default function Home() {
     <main className="flex min-h-screen flex-col bg-gradient-to-tl bg-[#d6b9d6] font-mono">
       <Navbar />
       <Confetti />
-      <Snow />
+      {/*<Snow />*/}
       <div className=" mt-24  px-12 py-4 ">
         <About />
         <AboutSection />
