@@ -1,6 +1,8 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Head from "next/head";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -17,7 +19,15 @@ export default function RootLayout({ children }) {
         <meta name="description" content={metadata.description} />
         <link rel="icon" href="/images/favicon.ico" />
       </head>
-      <body className={inter.className}>{children}</body>
+
+      {/* Apply main theme color and font to the entire body */}
+      <body
+        className={`${inter.className} bg-[#d6b9d6] font-mono min-h-screen`}
+      >
+        <Navbar />
+        {children} {/* Main content area wrapped by shared layout */}
+        <Footer />
+      </body>
     </html>
   );
 }
