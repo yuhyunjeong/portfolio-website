@@ -2,6 +2,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Head from "next/head";
 import Navbar from "./components/Navbar";
+import Snow from "./components/Snow";
 import Footer from "./components/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -25,6 +26,7 @@ export default function RootLayout({ children }) {
         className={`${inter.className} bg-[#d6b9d6] font-mono min-h-screen`}
       >
         <Navbar />
+        <Snow />
         {children} {/* Main content area wrapped by shared layout */}
         <Footer />
       </body>

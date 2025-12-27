@@ -5,7 +5,7 @@ export default function Snowfall() {
   const [snowflakes, setSnowflakes] = useState([]);
 
   useEffect(() => {
-    // Add a new snowflake at regular intervals (e.g. every 300ms)
+    // Add a new snowflake at regular intervals (e.g. every 200ms)
     const addSnowflake = () => {
       const newFlake = {
         id: Date.now(),
