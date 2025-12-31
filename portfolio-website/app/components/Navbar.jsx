@@ -14,15 +14,19 @@ import { supabase } from "../util/supabase/client";
 const navLink = [
   {
     title: "About",
-    path: "#about",
+    path: "/#about",
+  },
+  {
+    title: "Blog", // 추가
+    path: "/posts",
   },
   {
     title: "Project",
-    path: "#project",
+    path: "/#project",
   },
   {
     title: "Contact",
-    path: "#contact",
+    path: "/#contact",
   },
 ];
 

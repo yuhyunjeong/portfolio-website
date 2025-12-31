@@ -26,5 +26,7 @@ module.exports = {
       black: "900",
     },
   },
-  plugins: [],
+  plugins: [
+    require("@tailwindcss/typography"), // Adds default styles to HTML content (rich text) for styling Tiptap editor content
+  ],
 };
