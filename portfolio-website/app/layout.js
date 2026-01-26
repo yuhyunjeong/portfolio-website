@@ -5,6 +5,9 @@ import Navbar from "./components/Navbar";
 import Snow from "./components/Snow";
 import Footer from "./components/Footer";
 
+import AdminStats from "./components/AdminStats";
+import { Suspense } from "react";
+
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
@@ -29,6 +32,11 @@ export default function RootLayout({ children }) {
         <Snow />
         {children} {/* Main content area wrapped by shared layout */}
         <Footer />
+        {/* 3. Visitor Tracking & Admin Tools */}
+        {/* Use Suspense to prevent data fetching from blocking the main page render */}
+        <Suspense fallback={null}>
+          <AdminStats />
+        </Suspense>
       </body>
     </html>
   );
