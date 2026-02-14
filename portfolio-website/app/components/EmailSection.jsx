@@ -72,7 +72,7 @@ const EmailSection = () => {
             <FontAwesomeIcon icon={faLinkedin} className="w-10 h-10" />
           </a>
           <a
-            href="https://x.com/yuhyun_dev"
+            href="https://x.com/yuhyunjadedev"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-teal-100 transition-colors"
@@ -89,7 +89,7 @@ const EmailSection = () => {
           </a>
         </div>
         <p className="flex justify-center text-black text-lg font-medium">
-          contact@jadejung.com
+          contact@yuhyunjade.com
         </p>
         {/*}
         <form
