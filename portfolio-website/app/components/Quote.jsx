@@ -44,27 +44,31 @@ export default function Quote() {
   return (
     <div
       className="fixed z-50 transition-all duration-300 font-serif
-               
-               /* Mobile (Default): Bottom Center */
-               bottom-4 left-1/2 -translate-x-1/2 w-[calc(100%-2rem)] max-w-sm
-               p-4 bg-amber-50/95 backdrop-blur-sm rounded-xl border border-amber-200/50 text-center shadow-lg
-               
-               /* Small Screens (sm: 640px) & Above: Bottom Right */
-               sm:bottom-6 sm:right-6 sm:left-auto sm:translate-x-0 sm:w-auto sm:max-w-xs
-               sm:p-5 sm:rounded-2xl sm:border-amber-200/60 sm:shadow-lg sm:text-center"
+             /* Mobile (Default): 아담하고 compact하게 축소 */
+             bottom-3 left-1/2 -translate-x-1/2 w-[calc(100%-2.5rem)] max-w-xs
+             p-3.5 bg-purple-50/85 backdrop-blur-sm rounded-xl border border-purple-200 shadow-lg text-center
+             
+             /* Desktop (sm+): 기존 크기 유지 */
+             sm:bottom-6 sm:right-6 sm:left-auto sm:translate-x-0 sm:w-auto sm:max-w-xs
+             sm:p-5 sm:rounded-2xl"
     >
-      <p className="text-lg text-gray-800 mb-4 leading-relaxed">
+      {/* Quote content: Base size on mobile, larger on desktop */}
+      <p className="text-base sm:text-lg text-purple-950 font-medium mb-2.5 sm:mb-4 leading-relaxed font-serif">
         "{quoteData?.content}"
       </p>
-      <p className="text-sm text-gray-600 font-sans italic">
+
+      {/* Author name */}
+      <p className="text-xs sm:text-sm text-purple-900 font-sans italic font-medium">
         - {quoteData?.author}
       </p>
 
+      {/* Next button: Compact icon style */}
       <button
         onClick={fetchQuote}
-        className="mt-6 px-4 py-2 text-xs bg-amber-200 hover:bg-amber-300 rounded-full font-sans transition-colors"
+        aria-label="Next Quote"
+        className="mt-3.5 sm:mt-6 px-3 py-1.5 sm:px-4 sm:py-2 text-[11px] sm:text-xs bg-teal-200 hover:bg-teal-300 text-teal-950 font-semibold rounded-full font-sans transition-colors shadow-sm"
       >
-        🔄 New Quote
+        ▷▷
       </button>
     </div>
   );
