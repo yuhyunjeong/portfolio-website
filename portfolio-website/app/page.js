@@ -11,14 +11,19 @@ import Quote from "./components/Quote";
 export default function Home() {
   return (
     <main className="flex flex-col">
-      <Confetti />
-      <Quote />
+      {/*<Confetti />*/}
 
       <div className="mt-24 px-12 py-4">
-        <About />
+        <section className="font-bold text-xl sm:text-4xl flex-1 flex flex-col items-center justify-center text-white text-center my-12">
+          Writing a New Chapter.<br></br>See you soon!
+        </section>
+
+        <Quote />
+
+        {/*<About />
         <AboutSection />
         <ProjectsSection />
-        <EmailSection />
+        <EmailSection />*/}
       </div>
     </main>
   );

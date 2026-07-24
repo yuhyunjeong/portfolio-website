@@ -12,22 +12,22 @@ import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
 import { supabase } from "../util/supabase/client";
 
 const navLink = [
+  //{
+  //title: "About",
+  //path: "/#about",
+  //},
   {
-    title: "About",
-    path: "/#about",
-  },
-  {
-    title: "Blog", // 추가
+    title: "Blog",
     path: "/posts",
   },
-  {
-    title: "Project",
-    path: "/#project",
-  },
-  {
-    title: "Contact",
-    path: "/#contact",
-  },
+  //{
+  //title: "Project",
+  //path: "/#project",
+  //},
+  //{
+  //title: "Contact",
+  //path: "/#contact",
+  //},
 ];
 
 const Navbar = () => {
