@@ -51,7 +51,7 @@ export default function Quote() {
     >
       {/* Quote content: Base size on mobile, larger on desktop */}
       <p className="text-base sm:text-lg text-purple-950 font-medium mb-2.5 sm:mb-4 leading-relaxed font-serif">
-        "{quoteData?.content}"
+        &quot;{quoteData?.content}&quot;
       </p>
 
       {/* Author name */}
